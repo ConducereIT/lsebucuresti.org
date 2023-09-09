@@ -15,7 +15,7 @@ export default function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-                  Hello World! This is my first React App!
+                  Hello World!
         </a>
       </header>
     </div>
