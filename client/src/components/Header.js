@@ -10,7 +10,7 @@ export default function Header() {
             src="https://i.imgur.com/3Z0Q8ZB.png"
             width="30"
             height="30"
-            className="d-inline-block align-top bg"
+            className="d-inline-block align-top"
             alt=""
           />
           LSE Bucuresti
