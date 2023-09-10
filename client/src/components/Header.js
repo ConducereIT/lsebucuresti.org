@@ -17,7 +17,7 @@ export default function Header() {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
-          <Nav className="mr-auto">
+          <Nav className="ml-auto">
             <Nav.Link href="/">Acasa</Nav.Link>
             <Nav.Link href="/despre-noi">Despre noi</Nav.Link>
             <Nav.Link href="/membrii">Membrii</Nav.Link>
