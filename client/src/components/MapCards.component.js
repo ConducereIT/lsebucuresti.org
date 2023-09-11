@@ -1,7 +1,7 @@
 import React from "react";
 import CardView from "./Card.component";
 
-const Carousel = ({ styledObject }) => {
+const MapCards = ({ styledObject }) => {
   const design = {
     styleComponent: styledObject.styleComponent,
     style: styledObject.CardStyle,
@@ -34,4 +34,4 @@ const Carousel = ({ styledObject }) => {
   );
 };
 
-export default Carousel;
+export default MapCards;
