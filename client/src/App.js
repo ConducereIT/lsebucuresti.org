@@ -4,9 +4,9 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import Home from "./views/Home";
-import Preloader from "./components/Preloader";
-import { PreloaderProvider } from "./components/PreloaderProvider";
+import Home from "./views/Home.view";
+import Preloader from "./components/Preloader.component";
+import { PreloaderProvider } from "./components/PreloaderProvider.component";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
