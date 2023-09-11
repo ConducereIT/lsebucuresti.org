@@ -22,7 +22,7 @@ const CardView = ({
   FooterStyle,
 }) => {
   return (
-    <Card className={`${styleCard}`}>
+    <Card className={`${styleCard} w-full sm:w-1/3 p-4 sm:w-96 sm:h-96 m-3 mt-6 w-96 border border-black p-4 rounded-xl`}>
       <CardHeader color="blue-gray" className="relative h-56">
         <img src={ImgSrc} alt={ImgAlt} />
       </CardHeader>

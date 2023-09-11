@@ -11,7 +11,7 @@ const MapCards = ({ styledObject, mappingObject }) => {
   };
 
   return (
-    <div className={`${design.styleComponent}`}>
+    <div className={`${design.styleComponent} w-full flex flex-wrap justify-center bg-gray-200 p-2 sm:p-10 mt-5 sm:mt-40 mb-5 sm:mb-40 h-auto`}>
       {mappingObject.map((card, index) => {
         return (
           <CardView

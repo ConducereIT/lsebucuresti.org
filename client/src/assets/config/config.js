@@ -3,9 +3,9 @@ export const styledObjectExample = {
     "w-full flex flex-wrap justify-center bg-gray-200 p-2 sm:p-10 mt-5 sm:mt-40 mb-5 sm:mb-40 h-auto",
   style:
     "w-full sm:w-1/3 p-4 sm:w-96 sm:h-96 m-3 mt-6 w-96 border border-black p-4 rounded-xl",
-  CardHeaderStyle: "",
+  CardHeaderStyle: "relative h-56",
   CardBodyStyle: "",
-  FooterStyle: "",
+  FooterStyle: "pt-0 bg-black",
 };
 
 export const mappingObjectExample = [
