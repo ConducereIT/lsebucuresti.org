@@ -23,7 +23,7 @@ const Banner = () => {
   return (
     <>
       <Parallax
-        className="rounded-lg mb-40 md:w-[95%] mx-auto mt-7 lg:h-xl"
+        className="md:rounded-lg md:mb-40 md:w-[95%] mx-auto mt-7 lg:h-xl"
         strength={300}
       >
         <Background className="relative w-screen h-screen filter blur-md">
