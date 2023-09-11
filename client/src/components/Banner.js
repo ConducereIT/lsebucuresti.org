@@ -22,7 +22,10 @@ const Banner = () => {
 
   return (
     <>
-      <Parallax className="rounded-lg mb-40" strength={300}>
+      <Parallax
+        className="rounded-lg mb-40 md:w-[95%] mx-auto mt-7 lg:h-xl"
+        strength={300}
+      >
         <Background className="relative w-screen h-screen filter blur-md">
           <img
             src={LseBanner}
@@ -30,7 +33,7 @@ const Banner = () => {
             className="object-cover h-screen w-screen"
           />
         </Background>
-        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-1/2 lg:items-center">
+        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-xl lg:items-center">
           <div className="mx-auto max-w-xl text-center">
             <motion.div
               ref={ref}
