@@ -13,18 +13,23 @@ const MapCards = ({ styledObject, mappingObjectExample }) => {
 
   return (
     <div className={`${design.styleComponent}`}>
-      <CardView
-        styleCard={`${design.style}`}
-        CardHeaderStyle={`${design.CardHeaderStyle}`}
-        ImgSrc={`${design.ImgSrc}`}
-        ImgAlt={`${design.ImgAlt}`}
-        CardBodyStyle={`${design.CardBodyStyle}`}
-        CardTitle={`${design.CardTitle}`}
-        CardText={`${design.CardText}`}
-        FooterActive={true}
-        FooterText={`${design.FooterText}`}
-        FooterStyle={`${design.FooterStyle}`}
-      />
+      {mappingObjectExample.map((card, index) => {
+        return (
+          <CardView
+            key={index}
+            styleCard={`${design.style}`}
+            ImgSrc={card.ImgSrc}
+            ImgAlt={card.ImgAlt}
+            CardHeaderStyle={`${design.CardHeaderStyle}`}
+            CardBodyStyle={`${design.CardBodyStyle}`}
+            CardTitle={card.CardTitle}
+            CardText={card.CardText}
+            FooterActive={design.FooterActive}
+            FooterText={card.FooterText}
+            FooterStyle={`${design.FooterStyle}`}
+          />
+        );
+      })}
     </div>
   );
 };
