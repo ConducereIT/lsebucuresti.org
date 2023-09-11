@@ -8,14 +8,20 @@ import Footer from "../components/Footer.component";
 import MapCards from "../components/MapCards.component";
 
 //Config
-import { styledObjectExample } from "../assets/config/config";
+import {
+  styledObjectExample,
+  mappingObjectExample,
+} from "../assets/config/config";
 
 export default function Home() {
   return (
     <>
       <Header />
       <Banner />
-      <MapCards styledObject={styledObjectExample} />
+      <MapCards
+        styledObject={styledObjectExample}
+        mappingObject={mappingObjectExample}
+      />
       <Stats />
       <Footer />
     </>

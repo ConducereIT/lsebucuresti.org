@@ -1,18 +1,13 @@
 import React from "react";
 import CardView from "./Card.component";
 
-const MapCards = ({ styledObject }) => {
+const MapCards = ({ styledObject, mappingObjectExample }) => {
   const design = {
     styleComponent: styledObject.styleComponent,
     style: styledObject.CardStyle,
     CardHeaderStyle: styledObject.CardHeaderStyle,
-    ImgSrc: styledObject.ImgSrc,
-    ImgAlt: styledObject.ImgAlt,
     CardBodyStyle: styledObject.CardBodyStyle,
-    CardTitle: styledObject.CardTitle,
-    CardText: styledObject.CardText,
     FooterActive: styledObject.FooterActive,
-    FooterText: styledObject.FooterText,
     FooterStyle: styledObject.style,
   };
 
