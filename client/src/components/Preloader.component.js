@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { PreloaderContext } from "./PreloaderProvider";
+import { PreloaderContext } from "./PreloaderProvider.component";
 
 const Preloader = () => {
   const { isLoading } = useContext(PreloaderContext);
