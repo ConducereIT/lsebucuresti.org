@@ -15,7 +15,7 @@ export default function AnimatedCounter({ from, to }) {
   // while in view, animate the count
   useEffect(() => {
     if (inView) {
-      animate(count, to, { duration: 5 });
+      animate(count, to, { duration: 3 });
     }
   }, [count, inView, to]);
   return <motion.span ref={ref}>{rounded}</motion.span>;
