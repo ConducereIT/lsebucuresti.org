@@ -18,8 +18,8 @@ export default function Stats() {
   }, [isInView]);
   return (
     <>
-      <Parallax strength={400}>
-        <Background className="relative w-screen h-screen ">
+      <Parallax strength={400} className="my-10">
+        <Background className="relative w-screen h-screen blur-sm">
           <img
             src={LseBanner}
             alt="LSE Banner"

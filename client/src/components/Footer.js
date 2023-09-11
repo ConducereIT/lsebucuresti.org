@@ -4,7 +4,7 @@ import Logo from "../assets/img/LogoWhite.webp";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-blue-600">
+      <footer className="bg-blue-600 mt-auto pt-3">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="md:flex md:items-center md:justify-between">
             <div className="flex items-center mb-4 sm:mb-0 m-2">
@@ -15,13 +15,6 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-4 md:gap-4 flex justify-between m-3">
               <a
-                href="https://www.instagram.com/ligastudentilorelectronistilse/?hl=en"
-                target="_blank"
-                className=" hover:opacity-80 duration-300 hover:scale-110"
-              >
-                <BsInstagram size={20} color="white" />
-              </a>
-              <a
                 href="https://www.facebook.com/lseorgro/"
                 target="_blank"
                 className=" hover:opacity-80 duration-300 hover:scale-110"
@@ -29,11 +22,11 @@ export default function Footer() {
                 <BsFacebook size={20} color="white" />
               </a>
               <a
-                href="https://www.linkedin.com/company/ligastudentilorelectronisti/?viewAsMember=true"
+                href="https://www.instagram.com/ligastudentilorelectronistilse/?hl=en"
                 target="_blank"
                 className=" hover:opacity-80 duration-300 hover:scale-110"
               >
-                <BsLinkedin size={20} color="white" />
+                <BsInstagram size={20} color="white" />
               </a>
               <a
                 href="https://www.youtube.com/user/lsebucuresti"
@@ -42,11 +35,18 @@ export default function Footer() {
               >
                 <BsYoutube size={20} color="white" />
               </a>
+              <a
+                href="https://www.linkedin.com/company/ligastudentilorelectronisti/?viewAsMember=true"
+                target="_blank"
+                className=" hover:opacity-80 duration-300 hover:scale-110"
+              >
+                <BsLinkedin size={20} color="white" />
+              </a>
             </div>
           </div>
           <hr className="my-6 border-white sm:mx-auto lg:my-8" />
           <span className="block text-sm text-white sm:text-center ">
-            © ligastudentilorelectronisti . All Rights Reserved.
+            Copyright to @Lse București
           </span>
         </div>
       </footer>
