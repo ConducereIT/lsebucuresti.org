@@ -16,7 +16,7 @@ export const mappingObjectExample = [
     CardTitle: "UI/UX Review Check",
     CardText:
       "The place is close to Barceloneta Beach and bus stop just 2 min bywalk and near to quot;Naviglioquot; where you can enjoy the mainnight life in Barcelona.",
-    FooterText: "",
+    FooterText: "Read More",
   },
   {
     ImgSrc:
@@ -25,7 +25,7 @@ export const mappingObjectExample = [
     CardTitle: "UI/UX Review Check",
     CardText:
       "The place is close to Barceloneta Beach and bus stop just 2 min bywalk and near to quot;Naviglioquot; where you can enjoy the mainnight life in Barcelona.",
-    FooterText: "",
+    FooterText: "Read More",
   },
   {
     ImgSrc:
@@ -34,7 +34,7 @@ export const mappingObjectExample = [
     CardTitle: "UI/UX Review Check",
     CardText:
       "The place is close to Barceloneta Beach and bus stop just 2 min bywalk and near to quot;Naviglioquot; where you can enjoy the mainnight life in Barcelona.",
-    FooterText: "",
+    FooterText: "Read More",
   },
   {
     ImgSrc:
@@ -43,6 +43,6 @@ export const mappingObjectExample = [
     CardTitle: "UI/UX Review Check",
     CardText:
       "The place is close to Barceloneta Beach and bus stop just 2 min bywalk and near to quot;Naviglioquot; where you can enjoy the mainnight life in Barcelona.",
-    FooterText: "",
+    FooterText: "Read More",
   },
 ];

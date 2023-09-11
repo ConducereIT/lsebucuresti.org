@@ -1,19 +1,18 @@
 import React from "react";
 import CardView from "./Card.component";
 
-const MapCards = ({ styledObject, mappingObjectExample }) => {
+const MapCards = ({ styledObject, mappingObject }) => {
   const design = {
     styleComponent: styledObject.styleComponent,
-    style: styledObject.CardStyle,
+    style: styledObject.style,
     CardHeaderStyle: styledObject.CardHeaderStyle,
     CardBodyStyle: styledObject.CardBodyStyle,
-    FooterActive: styledObject.FooterActive,
     FooterStyle: styledObject.style,
   };
 
   return (
     <div className={`${design.styleComponent}`}>
-      {mappingObjectExample.map((card, index) => {
+      {mappingObject.map((card, index) => {
         return (
           <CardView
             key={index}
@@ -24,7 +23,7 @@ const MapCards = ({ styledObject, mappingObjectExample }) => {
             CardBodyStyle={`${design.CardBodyStyle}`}
             CardTitle={card.CardTitle}
             CardText={card.CardText}
-            FooterActive={design.FooterActive}
+            FooterActive={true}
             FooterText={card.FooterText}
             FooterStyle={`${design.FooterStyle}`}
           />

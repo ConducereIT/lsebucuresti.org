@@ -22,9 +22,7 @@ const CardView = ({
   FooterStyle,
 }) => {
   return (
-    <Card
-      className={`${styleCard} mt-6 w-96 border border-black p-4 rounded-xl`}
-    >
+    <Card className={`${styleCard}`}>
       <CardHeader color="blue-gray" className="relative h-56">
         <img src={ImgSrc} alt={ImgAlt} />
       </CardHeader>
@@ -34,10 +32,9 @@ const CardView = ({
         </Typography>
         <Typography>{CardText}</Typography>
       </CardBody>
-      {console.log(FooterActive)}
       {FooterActive ? (
         <CardFooter className="pt-0 bg-black">
-          <Button>Read More</Button>
+          <Button>{FooterText}</Button>
         </CardFooter>
       ) : (
         <></>
