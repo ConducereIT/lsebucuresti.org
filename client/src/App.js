@@ -5,6 +5,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Home from "./views/Home.view";
+import Contact from "./views/Contact.view";
 import Preloader from "./components/Preloader.component";
 import { PreloaderProvider } from "./components/PreloaderProvider.component";
 
@@ -23,7 +24,7 @@ export default function App() {
           <Route path="/evenimente" element={<Home />} />
           <Route path="/facultate" element={<Home />} />
           <Route path="/faq" element={<Home />} />
-          <Route path="/contact" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/despre" element={<Home />} />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
