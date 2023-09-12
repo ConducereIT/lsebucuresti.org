@@ -38,7 +38,7 @@ export default function Footer() {
               <a
                 href="https://www.linkedin.com/company/ligastudentilorelectronisti"
                 target="_blank"
-                className=" hover:opacity-80 duration-300 hover:scale-110"
+                className=" hover:opacity-80 duration-300 hover:scale-110 rounded-lg"
               >
                 <BsLinkedin size={20} color="white" />
               </a>
