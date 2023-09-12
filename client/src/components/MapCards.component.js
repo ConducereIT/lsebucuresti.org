@@ -11,7 +11,7 @@ const MapCards = ({ styledObject, mappingObject }) => {
   };
 
   return (
-    <div className={`${design.styleComponent}`}>
+    <div className={design.styleComponent}>
       {mappingObject.map((card, index) => {
         return (
           <CardView

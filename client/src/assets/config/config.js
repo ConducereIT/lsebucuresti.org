@@ -2,10 +2,10 @@ export const styledObjectExample = {
   styleComponent:
     "w-full flex flex-wrap justify-center bg-gray-200 p-2 sm:p-10 mt-5 sm:mt-40 mb-5 sm:mb-40 h-auto",
   style:
-    "w-full sm:w-1/3 p-4 sm:w-96 sm:h-96 m-3 mt-6 w-96 border border-black p-4 rounded-xl h-96",
+    "md:!h-auto w-full sm:w-1/3 p-4 sm:w-96 sm:h-auto m-3 mt-6 w-96 border border-black p-4 rounded-xl",
   CardHeaderStyle: "relative h-56 ",
   CardBodyStyle: "",
-  FooterStyle: "pt-0 bg-black",
+  FooterStyle: "pt-0 bg-black mt-4 text-center",
 };
 
 export const mappingObjectExample = [
