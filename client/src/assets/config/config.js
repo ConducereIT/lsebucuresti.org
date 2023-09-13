@@ -5,7 +5,7 @@ export const styledObjectExample = {
     "md:!h-auto w-full sm:w-1/3 p-4 sm:w-96 sm:h-auto m-3 mt-6 w-96 border border-black p-4 rounded-xl",
   CardHeaderStyle: "relative h-56 ",
   CardBodyStyle: "",
-  FooterStyle: "pt-0 bg-black mt-4 text-center",
+  FooterStyle: "pt-0 bg-black mt-4 text-center rounded-lg",
 };
 
 export const mappingObjectExample = [
