@@ -6,6 +6,7 @@ import Banner from "../components/Banner.component";
 import Stats from "../components/Stats.component";
 import Footer from "../components/Footer.component";
 import MapCards from "../components/MapCards.component";
+import Carousel from "../components/Carousel.component";
 import Sponsor from "../components/Sponsor";
 //Config
 import {
@@ -23,6 +24,7 @@ export default function Home() {
         mappingObject={mappingObjectExample}
       />
       <Stats />
+      <Carousel />
       <Sponsor />
       <Footer />
     </>
