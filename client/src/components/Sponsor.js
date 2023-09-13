@@ -12,7 +12,7 @@ const Sponsor = () => {
         
         <div className='flex justify-center items-center flex-col'>
             <div className='text-3xl tracking-wider font-bold mb-3'>PARTENERI</div>
-            <div className='flex items-center justify-around'>
+            <div className='flex flex-col items-center justify-around md:flex-row'>
                 <Link className='h-40 w-40 flex items-center justify-center hover:scale-110 duration-300' to='/'><img src={mitclima}></img></Link>
                 <Link className='h-40 w-40 flex items-center justify-center hover:scale-110 duration-300' to='/'><img src={etti}></img></Link>
                 <Link className='h-40 w-40 flex items-center justify-center hover:scale-110 duration-300' to='/'><img src={mitsubishi}></img></Link>
