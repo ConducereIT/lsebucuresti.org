@@ -19,7 +19,7 @@ export default function Stats() {
   return (
     <>
       <Parallax strength={400} className="my-10">
-        <Background className="relative w-screen h-screen blur-sm">
+        <Background className="relative w-screen h-screen">
           <img
             src={LseBanner}
             alt="LSE Banner"
