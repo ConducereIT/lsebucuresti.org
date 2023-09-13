@@ -3,7 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { PiDotOutlineLight } from "react-icons/pi";
 
-import { slides } from "../assets/config/config";
+import { slides } from "../assets/config/configCarousel";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
