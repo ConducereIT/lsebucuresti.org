@@ -19,7 +19,7 @@ export default function Header() {
         <Navbar.Collapse className="justify-content-end">
           <Nav className="ml-auto">
             <Nav.Link href="/">Acasa</Nav.Link>
-            <Nav.Link href="/despre-noi">Despre noi</Nav.Link>
+            <Nav.Link href="/despre">Despre noi</Nav.Link>
             <Nav.Link href="/membrii">Membrii</Nav.Link>
             <Nav.Link href="/evenimente">Evenimente</Nav.Link>
             <Nav.Link href="/facultate">Facultate</Nav.Link>
