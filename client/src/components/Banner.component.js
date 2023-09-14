@@ -30,14 +30,14 @@ const Banner = () => {
           <video
             src={videoBanner}
             alt="LSE Banner"
-            className="object-cover h-screen w-screen"
+            className="object-cover h-full w-full"
             autoPlay={true}
             muted={true}
             loop={true}
           />
         </Background>
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-xl lg:items-center">
-          <div className="mx-auto max-w-xl text-center mt-48">
+          <div className="mx-auto max-w-xl text-center mt-40">
             <motion.div
               ref={ref}
               variants={{
