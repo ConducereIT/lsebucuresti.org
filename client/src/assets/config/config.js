@@ -8,6 +8,22 @@ export const styledObjectExample = {
   FooterStyle: "pt-0 bg-black mt-4 text-center rounded-lg",
 };
 
+export const empty = {
+  styleComponent:
+    "",
+  style:
+    "",
+  CardHeaderStyle: "",
+  CardBodyStyle: "",
+  FooterStyle: "",
+};
+
+//StyledComponent : Componenta care mentine style ul sectiunii cu carduri
+//Style : Componenta care mentine style ul intregului card
+// Card Header Style : Componenta care mentine style ul headerului unde se afla si imagini
+// Card Body Style : Componenta care mentine style ul body-ului unde se afla si textele
+// Footer Style : Componenta care mentine style-ul footer-ului
+
 export const mappingObjectExample = [
   {
     ImgSrc:
