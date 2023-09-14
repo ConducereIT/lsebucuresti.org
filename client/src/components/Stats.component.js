@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Background, Parallax } from "react-parallax";
-import LseBanner from "../assets/img/LseBanner.webp";
+import LseBanner from "../assets/img/LseBanner.png";
 import AnimatedCounter from "./AnimatedCounter.component";
 import { motion, useInView, useAnimation } from "framer-motion";
 
