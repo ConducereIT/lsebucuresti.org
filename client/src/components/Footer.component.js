@@ -1,6 +1,6 @@
 import React from "react";
 import { BsInstagram, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
-import Logo from "../assets/img/LogoWhite.webp";
+import Logo from "../assets/img/LogoWhite.png";
 export default function Footer() {
   return (
     <>

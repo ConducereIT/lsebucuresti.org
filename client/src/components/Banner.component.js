@@ -3,7 +3,7 @@ import { Parallax, Background } from "react-parallax";
 
 //Assets
 import videoBanner from "../assets/video/videoBanner.mp4";
-import LseBanner from "../assets/img/LseBanner.webp";
+import LseBanner from "../assets/img/LseBanner.png";
 
 //Packages
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -40,7 +40,7 @@ const Banner = () => {
     <>
       <Parallax
         className="md:rounded-lg md:mb-40 md:w-[98%] mx-auto mt-7 h-1/6"
-        strength={500}
+        strength={250}
       >
         <Background className="relative w-screen h-screen filter">
           <video
