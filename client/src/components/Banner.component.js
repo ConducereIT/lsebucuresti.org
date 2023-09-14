@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Parallax, Background } from "react-parallax";
 
 //Assets
-import LseBanner from "../assets/img/LseBanner.webp";
+import videoBanner from "../assets/video/videoBanner.mp4";
 
 //Packages
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -38,18 +38,21 @@ const Banner = () => {
   return (
     <>
       <Parallax
-        className="md:rounded-lg md:mb-40 md:w-[95%] mx-auto mt-7 lg:h-xl"
-        strength={300}
+        className="md:rounded-lg md:mb-40 md:w-[98%] mx-auto mt-7 h-1/6"
+        strength={500}
       >
-        <Background className="relative w-screen h-screen filter blur-md">
-          <img
-            src={LseBanner}
+        <Background className="relative w-screen h-screen filter">
+          <video
+            src={videoBanner}
             alt="LSE Banner"
-            className="object-cover h-screen w-screen"
+            className="object-cover h-full w-full"
+            autoPlay={true}
+            muted={true}
+            loop={true}
           />
         </Background>
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-xl lg:items-center">
-          <div className="mx-auto max-w-xl text-center">
+          <div className="mx-auto max-w-xl text-center mt-40">
             <motion.div
               ref={ref}
               variants={{
