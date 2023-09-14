@@ -25,6 +25,7 @@ const CardView = ({
   FooterActive,
   FooterText,
   FooterStyle,
+  FooterButtonOnClickEvent,
 }) => {
   return (
     <Card className={styleCard}>
@@ -52,7 +53,9 @@ const CardView = ({
       </CardBody>
       {FooterActive ? (
         <CardFooter className={`${FooterStyle}`}>
-          <Button>{FooterText}</Button>
+          <Button className="w-full" onClick={FooterButtonOnClickEvent}>
+            {FooterText}
+          </Button>
         </CardFooter>
       ) : (
         <></>

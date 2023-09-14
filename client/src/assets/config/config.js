@@ -22,7 +22,22 @@ export const styledObjectExample = {
   CardBodyStyle: "",
   CardTitleStyle: "",
   CardTextStyle: "",
-  FooterStyle: "pt-0 bg-black mt-4 text-center rounded-lg",
+  FooterStyle: "pt-0 bg-black mt-4 text-center rounded-lg w-full",
+  isActive: true,
+};
+
+export const styledObjectTest = {
+  styleComponent:
+    "h-auto w-full bg-black justify-center align-center grid items-center rounded-none place-items-center",
+  style:
+    "h-96 w-[50%] center  mt-10 mb-10 rounded-none grid grid-cols-2 bg-green-500",
+  CardHeaderStyle:
+    "rounded-none md:w-auto md:h-full sm:h-5 place-items-stretch mt-2",
+  AmprentaIsActive: false,
+  CardBodyStyle: "w-auto h-full",
+  CardTitleStyle: "",
+  CardTextStyle: "",
+  FooterStyle: "",
   isActive: true,
 };
 
@@ -40,10 +55,9 @@ export const styledObjectEvenimente = {
   FooterStyle: "",
   isActive: false,
 };
-
 // Mapping Object
 
-export const mappingExample = [
+export const test = [
   {
     ImgSrc: "", // Path-ul din folder unde se gaseste imaginea sau locatia web.
     ImgAlt: "", // Denumirea imaginii in caz ca aceasta nu se poate afisa.
@@ -174,6 +188,25 @@ export const mappingObjectExample = [
     CardText:
       "The place is close to Barceloneta Beach and bus stop just 2 min bywalk and near to quot;Naviglioquot; where you can enjoy the mainnight life in Barcelona.",
     FooterText: "Read More",
+  },
+];
+
+export const mappingObjectTest = [
+  {
+    ImgSrc: SimulareIMG,
+    ImgAlt: "",
+    CardTitle: "SIMULARE EXAMEN ADMITERE",
+    CardText:
+      "Acest eveniment are ca scop pregătirea elevilor de liceu prin organizarea unei simulări a examenului de admitere ce are loc în fiecare an în cadrul Universității Politehnica din București. ",
+    FooterText: "",
+  },
+  {
+    ImgSrc: SimulareIMG,
+    ImgAlt: "",
+    CardTitle: "SIMULARE EXAMEN ADMITERE",
+    CardText:
+      "Acest eveniment are ca scop pregătirea elevilor de liceu prin organizarea unei simulări a examenului de admitere ce are loc în fiecare an în cadrul Universității Politehnica din București. ",
+    FooterText: "",
   },
 ];
 

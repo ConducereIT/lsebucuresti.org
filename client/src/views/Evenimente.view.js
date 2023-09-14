@@ -7,6 +7,8 @@ import Banner from "../components/Banner.component";
 
 // Config
 import {
+  styledObjectTest,
+  mappingObjectTest,
   styledObjectEvenimente,
   mappingObjectEvenimente,
 } from "../assets/config/config";
@@ -17,8 +19,14 @@ const Evenimente = () => {
       <Header />
       <Banner />
       <MapCards
+        styledObject={styledObjectTest}
+        mappingObject={mappingObjectTest}
+        footerOnClick={() => {}}
+      />
+      <MapCards
         styledObject={styledObjectEvenimente}
         mappingObject={mappingObjectEvenimente}
+        footerOnClick={() => {}}
       />
     </>
   );
