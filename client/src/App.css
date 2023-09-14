@@ -197,3 +197,15 @@
 .contact form button:hover::before {
     width: 100%;
 }
+
+@media (max-width: 767px) {
+    .banner-image {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner-video {
+        display: none;
+    }
+}
