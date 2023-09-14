@@ -15,14 +15,14 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-4 md:gap-4 flex justify-between m-3">
               <a
-                href="https://www.facebook.com/lseorgro/"
+                href="https://www.facebook.com/lseorgro"
                 target="_blank"
                 className=" hover:opacity-80 duration-300 hover:scale-110"
               >
                 <BsFacebook size={20} color="white" />
               </a>
               <a
-                href="https://www.instagram.com/ligastudentilorelectronistilse/?hl=en"
+                href="https://www.instagram.com/ligastudentilorelectronistilse"
                 target="_blank"
                 className=" hover:opacity-80 duration-300 hover:scale-110"
               >
@@ -36,9 +36,9 @@ export default function Footer() {
                 <BsYoutube size={20} color="white" />
               </a>
               <a
-                href="https://www.linkedin.com/company/ligastudentilorelectronisti/?viewAsMember=true"
+                href="https://www.linkedin.com/company/ligastudentilorelectronisti"
                 target="_blank"
-                className=" hover:opacity-80 duration-300 hover:scale-110"
+                className=" hover:opacity-80 duration-300 hover:scale-110 rounded-lg"
               >
                 <BsLinkedin size={20} color="white" />
               </a>

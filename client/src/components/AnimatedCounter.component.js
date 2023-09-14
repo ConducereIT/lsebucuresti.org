@@ -22,7 +22,7 @@ export default function AnimatedCounter({ from, to }) {
 
   return (
     <>
-      <motion.span ref={ref}>{rounded}</motion.span>;
+      <motion.span ref={ref}>{rounded}</motion.span>
     </>
   );
 }
