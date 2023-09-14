@@ -20,16 +20,20 @@ const Banner = () => {
     }
   }, [isInView]);
 
-  const text = ["Mai puternici împreună!", "Amintiri de neuitat!", "Proiecte de succes!"];
+  const text = [
+    "Mai puternici împreună!",
+    "Amintiri de neuitat!",
+    "Proiecte de succes!",
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect ( () => {
-    const interval = setInterval( () => {
-      setCurrentIndex( (prevIndex) => (prevIndex + 1) % text.length )
-    }, 5000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % text.length);
+    }, 7000);
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -62,9 +66,15 @@ const Banner = () => {
               <h2 className="text-3xl font-extrabold text-blue-600 sm:text-5xl">
                 Electroniști
               </h2>
-              <p className="mt-4 sm:text-md/relaxed text-white">
-                <strong>”{text[currentIndex]}”</strong>
-              </p>
+              <motion.p
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="mt-4 sm:text-md/relaxed text-white"
+                key={text[currentIndex]}
+              >
+                ”{text[currentIndex]}”
+              </motion.p>
             </motion.div>
           </div>
         </div>
