@@ -3,6 +3,7 @@ import { Parallax, Background } from "react-parallax";
 
 //Assets
 import videoBanner from "../assets/video/videoBanner.mp4";
+import LseBanner from "../assets/img/LseBanner.webp";
 
 //Packages
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -45,10 +46,15 @@ const Banner = () => {
           <video
             src={videoBanner}
             alt="LSE Banner"
-            className="object-cover h-full w-full"
+            className="object-cover h-full w-full hidden sm:block"
             autoPlay={true}
             muted={true}
             loop={true}
+          />
+          <img
+            src={LseBanner}
+            alt="LSE Banner"
+            className="object-cover h-screen w-screen block sm:hidden"
           />
         </Background>
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-xl lg:items-center">
