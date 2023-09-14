@@ -20,6 +20,17 @@ const Banner = () => {
     }
   }, [isInView]);
 
+  const text = ["Mai puternici împreună!", "Amintiri de neuitat!", "Proiecte de succes!"];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect ( () => {
+    const interval = setInterval( () => {
+      setCurrentIndex( (prevIndex) => (prevIndex + 1) % text.length )
+    }, 5000);
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <>
       <Parallax
@@ -52,7 +63,7 @@ const Banner = () => {
                 Electroniști
               </h2>
               <p className="mt-4 sm:text-md/relaxed text-white">
-                ”Mai puternici împreună!”
+                <strong>”{text[currentIndex]}”</strong>
               </p>
             </motion.div>
           </div>
