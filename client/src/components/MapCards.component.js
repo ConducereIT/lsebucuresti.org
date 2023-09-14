@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import CardView from "./Card.component";
+import { style } from "@motionone/dom";
 
 const MapCards = ({ styledObject, mappingObject }) => {
   //Animation
@@ -20,9 +21,13 @@ const MapCards = ({ styledObject, mappingObject }) => {
   const design = {
     styleComponent: styledObject.styleComponent,
     style: styledObject.style,
+    AmprentaIsActive: styledObject.AmprentaIsActive,
     CardHeaderStyle: styledObject.CardHeaderStyle,
     CardBodyStyle: styledObject.CardBodyStyle,
+    CardTitleStyle: styledObject.CardTitleStyle,
+    CardTextStyle: styledObject.CardTextStyle,
     FooterStyle: styledObject.FooterStyle,
+    isActive: styledObject.isActive,
   };
 
   return (
@@ -47,10 +52,13 @@ const MapCards = ({ styledObject, mappingObject }) => {
                 ImgSrc={card.ImgSrc}
                 ImgAlt={card.ImgAlt}
                 CardHeaderStyle={design.CardHeaderStyle}
+                AmprentaIsActive={design.AmprentaIsActive}
                 CardBodyStyle={design.CardBodyStyle}
                 CardTitle={card.CardTitle}
+                CardTitleStyle={design.CardTitleStyle}
                 CardText={card.CardText}
-                FooterActive={true}
+                CardTextStyle={design.CardTextStyle}
+                FooterActive={design.isActive}
                 FooterText={card.FooterText}
                 FooterStyle={design.FooterStyle}
               />

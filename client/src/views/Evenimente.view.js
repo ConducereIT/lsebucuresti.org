@@ -1,9 +1,27 @@
 import React from "react";
 
+// Components
+import MapCards from "../components/MapCards.component";
+import Header from "../components/Header.component";
+import Banner from "../components/Banner.component";
+
+// Config
+import {
+  styledObjectEvenimente,
+  mappingObjectEvenimente,
+} from "../assets/config/config";
+
 const Evenimente = () => {
-    return (
-        <h1>Evenimente</h1>
-    );
-}
+  return (
+    <>
+      <Header />
+      <Banner />
+      <MapCards
+        styledObject={styledObjectEvenimente}
+        mappingObject={mappingObjectEvenimente}
+      />
+    </>
+  );
+};
 
 export default Evenimente;
