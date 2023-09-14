@@ -2,8 +2,7 @@ import React from "react";
 
 //Components
 import Header from "../components/Header.component";
-import Banner from "../components/BannerPC.component";
-import BannerMobile from "../components/BannerMobile.component";
+import Banner from "../components/Banner.component";
 import Stats from "../components/Stats.component";
 import Footer from "../components/Footer.component";
 import MapCards from "../components/MapCards.component";
@@ -19,12 +18,7 @@ export default function Home() {
   return (
     <>
       <Header />
-        <div className="banner-image">
-            <Banner />
-        </div>
-        <div className="banner-video">
-            <BannerMobile />
-        </div>
+      <Banner />
       <MapCards
         styledObject={styledObjectExample}
         mappingObject={mappingObjectExample}
