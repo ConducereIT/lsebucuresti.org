@@ -22,6 +22,7 @@ const Evenimente = () => {
         styledObject={styledObjectTest}
         mappingObject={mappingObjectTest}
         footerOnClick={() => {}}
+        className=""
       />
       <MapCards
         styledObject={styledObjectEvenimente}
