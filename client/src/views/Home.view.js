@@ -28,11 +28,6 @@ export default function Home() {
     <>
       <Header />
       <Banner />
-      <AboutUs />
-      <MapCards
-        styledObject={styledObjectExample}
-        mappingObject={mappingObjectExample}
-      />
       <Stats />
       <Carousel slides={GallerySlides} />
       <Sponsor />
