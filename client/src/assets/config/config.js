@@ -29,9 +29,9 @@ export const styledObjectExample = {
 export const styledObjectTest = {
     styleComponent: "bg-black justify-center align-center grid items-center rounded-none place-items-center",
 
-    style: "mt-10 mb-10 rounded-none bg-green-500 sm:grid sm:grid-cols-2 sm:w-[50%] sm:justify-center",
+    style: "mt-10 mb-10 rounded-none bg-green-500 sm:grid sm:grid-cols-2 sm:w-[50%] sm:justify-center even:text-blue-600  odd:text-green-600",
 
-    CardHeaderStyle: "rounded-none md:w-auto md:h-full sm:h-5 place-items-stretch mt-2",
+    CardHeaderStyle: "rounded-none md:w-auto md:h-full sm:h-5 place-items-stretch mt-2 ",
 
     AmprentaIsActive: false,
 
