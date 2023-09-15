@@ -13,18 +13,28 @@ import {
   styledObjectExample,
   mappingObjectExample,
 } from "../assets/config/config";
+import { GallerySlides } from "../assets/config/configCarouselGallery";
+import AboutUs from "../components/AboutUs.component";
 
 export default function Home() {
+  const slides = [
+    { url: "http://localhost:3000/image-1.jpg", title: "beach" },
+    { url: "http://localhost:3000/image-2.jpg", title: "boat" },
+    { url: "http://localhost:3000/image-3.jpg", title: "forest" },
+    { url: "http://localhost:3000/image-4.jpg", title: "city" },
+    { url: "http://localhost:3000/image-5.jpg", title: "italy" },
+  ];
   return (
     <>
       <Header />
       <Banner />
+      <AboutUs />
       <MapCards
         styledObject={styledObjectExample}
         mappingObject={mappingObjectExample}
       />
       <Stats />
-      <Carousel />
+      <Carousel slides={GallerySlides} />
       <Sponsor />
       <Footer />
     </>
