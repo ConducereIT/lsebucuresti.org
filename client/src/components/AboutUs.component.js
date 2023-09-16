@@ -14,7 +14,7 @@ export default function AboutUs({ itemArray }) {
           <div className=" bg-slate-100">
             <DropdownButton
               id="dropdown-basic-button"
-              title="Departament"
+              title={"Departament " + selectedTab.label}
               variant="primary"
               size="lg"
               className=" bg-blue-600 w-fit rounded-lg"
@@ -30,17 +30,6 @@ export default function AboutUs({ itemArray }) {
               ))}
             </DropdownButton>
           </div>
-          {/* <nav className=" bg-slate-200 gap-5 text-xl border-2 border-black rounded-lg flex justify-between px-12 py-2">
-            {itemArray.map((item, index) => (
-              <div
-                key={index}
-                className=" cursor-pointer"
-                onClick={() => setSelectedTab(item)}
-              >
-                {`${item.label}`}
-              </div>
-            ))}
-          </nav> */}
           <main>
             <AnimatePresence mode="wait">
               <motion.div
