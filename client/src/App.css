@@ -41,20 +41,6 @@
     }
 }
 
-.loader {
-    width: 60px;
-}
-
-.loader-wheel {
-    animation: spin 1s infinite linear;
-    border: 2px solid rgba(30, 30, 30, 0.5);
-    border-left: 4px solid #fff;
-    border-radius: 50%;
-    height: 50px;
-    margin-bottom: 10px;
-    width: 50px;
-}
-
 :root {
     --fc-border-color: black;
     --fc-daygrid-event-dot-width: 5px;
@@ -70,15 +56,6 @@
     width: 900px;
 }
 
-.loader-text {
-    color: #fff;
-    font-family: arial, sans-serif;
-}
-
-.loader-text:after {
-    content: 'Loading';
-    animation: load 2s linear infinite;
-}
 
 @keyframes spin {
     0% {
@@ -118,7 +95,8 @@
 }
 
 .contact {
-    padding: 60px 0 200px 0;
+    padding-bottom: 0rem;
+    padding-top: 4.25rem;
 }
 
 .contact img {
@@ -167,7 +145,7 @@
     padding: 14px 48px;
     font-size: 18px;
     margin-top: 25px;
-   
+    border-width: 0.5px;
     position: relative;
     transition: 0.3s ease-in-out;
 }
@@ -178,12 +156,15 @@
 }
 
 .contact form button:hover {
+    border-color: #2563EB;
+    border-width: 0.5px;
+    border-radius: 0.5rem;
     color: #2563EB;
 }
 
 .contact form button::before {
     content: "";
-    background: #121212;
+    background: #fff;
     width: 0;
     height: 100%;
     position: absolute;
