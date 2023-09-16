@@ -1,4 +1,4 @@
-export const DespreNoiProps = [
+export const DepartamenteProps = [
   {
     label: "IT",
     title: "Departament IT",
