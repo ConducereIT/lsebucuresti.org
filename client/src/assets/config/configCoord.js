@@ -1,11 +1,11 @@
-import Furtuna from "../img/Portraits/coordonatori/portrait_teodor_furtuna.jpg";
-import Radu from "../img/Portraits/coordonatori/portrait_alexandru_radu.jpg";
-import Lungu from "../img/Portraits/coordonatori/portrait_radu_lungu.jpg";
-import Cioroiu from "../img/Portraits/coordonatori/portrait_ioana_cioroiu.jpg";
-import Vladescu from "../img/Portraits/coordonatori/portrait_adrian_vladescu.jpg";
-import Naidin from "../img/Portraits/coordonatori/portrait_teodora_naidin.jpg";
-import Staicu from "../img/Portraits/coordonatori/portrait_bianca_staicu.jpg";
-import Naziru from "../img/Portraits/coordonatori/portrait_miruna_naziru.jpg";
+import Furtuna from "../img/Portraits/coordonatori/portrait_teodor_furtuna.webp";
+import Radu from "../img/Portraits/coordonatori/portrait_alexandru_radu.webp";
+import Lungu from "../img/Portraits/coordonatori/portrait_radu_lungu.webp";
+import Cioroiu from "../img/Portraits/coordonatori/portrait_ioana_cioroiu.webp";
+import Vladescu from "../img/Portraits/coordonatori/portrait_adrian_vladescu.webp";
+import Naidin from "../img/Portraits/coordonatori/portrait_teodora_naidin.webp";
+import Staicu from "../img/Portraits/coordonatori/portrait_bianca_staicu.webp";
+import Naziru from "../img/Portraits/coordonatori/portrait_miruna_naziru.webp";
 
 export const membersCoord = [
   {
