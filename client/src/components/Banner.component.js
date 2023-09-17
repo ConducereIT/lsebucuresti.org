@@ -45,7 +45,6 @@ const Banner = () => {
         <Background className="relative w-screen h-screen filter">
           <video
             src={videoBanner}
-            alt="LSE Banner"
             className="object-cover h-full w-full hidden sm:block"
             autoPlay={true}
             muted={true}
