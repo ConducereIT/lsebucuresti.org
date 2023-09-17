@@ -1,8 +1,8 @@
-import CalinIorga from "../img/Portraits/consiliu_executiv/portrait_calin_iorga.jpg";
-import Teodora from "../img/Portraits/consiliu_executiv/portrait_teodora_mirzan.jpg";
-import Dragu from "../img/Portraits/consiliu_executiv/portrait_andrei_dragu.jpg";
-import Iulia from "../img/Portraits/consiliu_executiv/portrait_iulia_orvas.jpg";
-import Dinut from "../img/Portraits/consiliu_executiv/portrait_cosmin_dinut.jpg";
+import CalinIorga from "../img/Portraits/consiliu_executiv/portrait_calin_iorga.webp";
+import Teodora from "../img/Portraits/consiliu_executiv/portrait_teodora_mirzan.webp";
+import Dragu from "../img/Portraits/consiliu_executiv/portrait_andrei_dragu.webp";
+import Iulia from "../img/Portraits/consiliu_executiv/portrait_iulia_orvas.webp";
+import Dinut from "../img/Portraits/consiliu_executiv/portrait_cosmin_dinut.webp";
 export const membersCE = [
   {
     image: CalinIorga,

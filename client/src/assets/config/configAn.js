@@ -1,14 +1,14 @@
-import Iancu from "../img/Portraits/consilieri_an/portrait_fabian_iancu.jpg";
-import Soare from "../img/Portraits/consilieri_an/portrait_cristina_soare.jpg";
-import Racoare from "../img/Portraits/consilieri_an/portrait_eduard_racoare.jpg";
-import Blindu from "../img/Portraits/consilieri_an/portrait_delia_blindu.jpg";
-import Ichim from "../img/Portraits/consilieri_an/portrait_cosmin_ichim.jpg";
-import Nanu from "../img/Portraits/consilieri_an/portrait_ana_nanu.jpg";
-import Vlad from "../img/Portraits/consilieri_an/portrait_bogdan_vlad.jpg";
-import Jujan from "../img/Portraits/consilieri_an/portrait_alex_jujan.jpg";
-import Carp from "../img/Portraits/consilieri_an/portrait_bogdan_carp.jpg";
-import Scurtu from "../img/Portraits/consilieri_an/portrait_radu_scurtu.jpg";
-import Radu from "../img/Portraits/consilieri_an/portrait_mihaela_radu.jpg";
+import Iancu from "../img/Portraits/consilieri_an/portrait_fabian_iancu.webp";
+import Soare from "../img/Portraits/consilieri_an/portrait_cristina_soare.webp";
+import Racoare from "../img/Portraits/consilieri_an/portrait_eduard_racoare.webp";
+import Blindu from "../img/Portraits/consilieri_an/portrait_delia_blindu.webp";
+import Ichim from "../img/Portraits/consilieri_an/portrait_cosmin_ichim.webp";
+import Nanu from "../img/Portraits/consilieri_an/portrait_ana_nanu.webp";
+import Vlad from "../img/Portraits/consilieri_an/portrait_bogdan_vlad.webp";
+import Jujan from "../img/Portraits/consilieri_an/portrait_alex_jujan.webp";
+import Carp from "../img/Portraits/consilieri_an/portrait_bogdan_carp.webp";
+import Scurtu from "../img/Portraits/consilieri_an/portrait_radu_scurtu.webp";
+import Radu from "../img/Portraits/consilieri_an/portrait_mihaela_radu.webp";
 
 export const membersAn = [
   {
