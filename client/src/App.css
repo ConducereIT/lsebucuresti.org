@@ -94,7 +94,6 @@
 }
 
 .contact {
-
   padding-bottom: 0rem;
   padding-top: 4.25rem;
 }
@@ -185,8 +184,6 @@
   width: 100%;
 }
 
-
-
 :root {
   scrollbar-width: none; /* Ascunde bara de derulare verticală */
 }
@@ -238,3 +235,4 @@
       left: 0;
     }
   }
+}
