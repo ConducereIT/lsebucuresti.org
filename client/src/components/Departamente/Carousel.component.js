@@ -16,11 +16,13 @@ const CarouselDepartament = ({ selectedTab }) => {
         </div>
       </div>
 
-      <div className="">
+      <div className="-translate-y-10">
         <Carousel slides={selectedTab.images} />
       </div>
     </div>
   );
 };
+
+// pl-40 pr-20 -translate-y-10
 
 export default CarouselDepartament;
