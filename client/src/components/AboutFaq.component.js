@@ -6,7 +6,7 @@ export default function AboutFaq() {
       <div>
         <ul className="max-w-2xl mx-auto divide-y  shadow shadow-blue-600 rounded-xl">
           <li>
-            <details className="group">
+            <details className="group" open>
               <summary className="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
                 <svg
                   className="w-5 h-5 text-gray-500 transition group-open:rotate-90"
