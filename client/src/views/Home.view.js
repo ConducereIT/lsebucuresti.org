@@ -8,6 +8,7 @@ import Footer from "../components/Footer.component";
 import MapCards from "../components/MapCards.component";
 import Carousel from "../components/Carousel.component";
 import Sponsor from "../components/Sponsor.component";
+import About from "../components/About.component";
 //Config
 import {
   styledObjectExample,
@@ -19,6 +20,7 @@ export default function Home() {
     <>
       <Header />
       <Banner />
+      <About />
       <MapCards
         styledObject={styledObjectExample}
         mappingObject={mappingObjectExample}
