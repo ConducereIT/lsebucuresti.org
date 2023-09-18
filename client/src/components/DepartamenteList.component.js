@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
-export default function AboutUs({ itemArray }) {
+export default function DepartamenteList({ itemArray }) {
   const [selectedTab, setSelectedTab] = useState(itemArray[0]);
 
   return (

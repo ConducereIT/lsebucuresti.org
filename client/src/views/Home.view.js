@@ -5,16 +5,10 @@ import Header from "../components/Header.component";
 import Banner from "../components/Banner.component";
 import Stats from "../components/Stats.component";
 import Footer from "../components/Footer.component";
-import MapCards from "../components/MapCards.component";
 import Carousel from "../components/Carousel.component";
 import Sponsor from "../components/Sponsor.component";
 //Config
-import {
-  styledObjectExample,
-  mappingObjectExample,
-} from "../assets/config/config";
 import { GallerySlides } from "../assets/config/configCarouselGallery";
-import AboutUs from "../components/AboutUs.component";
 
 export default function Home() {
   const slides = [
