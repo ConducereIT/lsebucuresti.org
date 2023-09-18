@@ -9,11 +9,6 @@ import MapCards from "../components/MapCards.component";
 import Carousel from "../components/Carousel.component";
 import Sponsor from "../components/Sponsor.component";
 import About from "../components/About.component";
-//Config
-import {
-  styledObjectExample,
-  mappingObjectExample,
-} from "../assets/config/config";
 
 export default function Home() {
   return (
@@ -21,10 +16,6 @@ export default function Home() {
       <Header />
       <Banner />
       <About />
-      <MapCards
-        styledObject={styledObjectExample}
-        mappingObject={mappingObjectExample}
-      />
       <Stats />
       <Carousel />
       <Sponsor />
