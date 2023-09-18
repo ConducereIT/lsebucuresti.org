@@ -29,7 +29,7 @@ export default function About() {
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.25 }}
             >
-              <div className="pt-10">
+              <div className="py-10">
                 <div className=" grid grid-cols-1 lg:grid-cols-2">
                   <div className=" pb-10 md:pb-0">
                     <div className="md:pb-16">
@@ -60,14 +60,22 @@ export default function About() {
                   </div>
 
                   <div>
-                    <img className=" rounded-lg " src={LsePhoto} alt="" />
+                    <img
+                      className=" rounded-lg "
+                      src={LsePhoto}
+                      alt="UsPhoto"
+                    />
                   </div>
                 </div>
               </div>
               <div className=" md:pt-20 pt-10">
                 <div className=" grid grid-cols-1 lg:grid-cols-2">
                   <div className=" pb-10">
-                    <img className=" rounded-lg " src={LsePhoto} alt="" />
+                    <img
+                      className=" rounded-lg "
+                      src={LsePhoto}
+                      alt="ViziunePhoto"
+                    />
                   </div>
                   <div className=" pb-10 md:pb-0">
                     <div className="md:pb-16 md:pl-8">
@@ -93,14 +101,18 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="pt-10">
+              <div className="md:pt-20 pt-10">
                 <div className=" grid grid-cols-1 lg:grid-cols-2">
-                  <div className="  md:pr-8 md:pt-0">
+                  <div className=" md:pr-8 md:pt-0 pb-4 md:pb-0">
                     <AboutFaq />
                   </div>
 
                   <div>
-                    <img className=" rounded-lg " src={LsePhoto} alt="" />
+                    <img
+                      className=" rounded-lg "
+                      src={LsePhoto}
+                      alt="FaqPhoto"
+                    />
                   </div>
                 </div>
               </div>
