@@ -19,12 +19,6 @@ const Evenimente = () => {
       <Header />
       <Banner />
       <MapCards
-        styledObject={styledObjectTest}
-        mappingObject={mappingObjectTest}
-        footerOnClick={() => {}}
-        className=""
-      />
-      <MapCards
         styledObject={styledObjectEvenimente}
         mappingObject={mappingObjectEvenimente}
         footerOnClick={() => {}}
