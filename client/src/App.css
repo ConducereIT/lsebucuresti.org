@@ -94,6 +94,7 @@
 }
 
 .contact {
+
   padding-bottom: 0rem;
   padding-top: 4.25rem;
 }
@@ -148,6 +149,7 @@
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
+
   border-width: 0.5px;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -167,6 +169,7 @@
 
 .contact form button::before {
   content: "";
+
   background: #fff;
   width: 0;
   height: 100%;
@@ -181,6 +184,8 @@
 .contact form button:hover::before {
   width: 100%;
 }
+
+
 
 :root {
   scrollbar-width: none; /* Ascunde bara de derulare verticală */
@@ -198,3 +203,38 @@
 :root::-webkit-scrollbar-thumb {
   background-color: transparent; /* Culoarea thumb-ului (butonului de derulare) */
 }
+
+@media (min-width: 1024px) {
+  .customClass {
+    width: 900px !important;
+  }
+
+  .customClass:nth-child(odd) {
+    /* Stiluri pentru elementele impare */
+    h1 {
+    }
+
+    .bodyClass {
+      position: absolute;
+      right: 0;
+    }
+
+    .headerClass {
+      left: 0;
+    }
+  }
+
+  /* Stil pentru elementele cu poziții pare */
+  .customClass:nth-child(even) {
+    h1 {
+    }
+
+    .headerClass {
+      right: 0;
+    }
+
+    .bodyClass {
+      position: absolute;
+      left: 0;
+    }
+  }
