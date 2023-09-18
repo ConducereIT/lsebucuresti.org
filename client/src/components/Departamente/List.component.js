@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import Carousel from "./Carousel.component";
 import { motion, AnimatePresence } from "framer-motion";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+
+import DepartamentItem from "./Item.component";
 
 export default function DepartamenteList({ itemArray }) {
   const [selectedTab, setSelectedTab] = useState(itemArray[0]);
 
   return (
     <>
-      <div className="md:pt-20 md:pb-32 pb-10 pt-10 md:mx-52 mx-2">
+      <div className="md:pt-5 md:pb-32 pb-10 pt-10 md:mx-52 mx-2">
         <div>
-          <div className=" bg-slate-100">
+          <div className=" bg-slate-100 flex justify-end ">
             <DropdownButton
               id="dropdown-basic-button"
               title={"Departament " + selectedTab.label}
@@ -39,23 +40,9 @@ export default function DepartamenteList({ itemArray }) {
                 exit={{ y: -10, opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className=" bg-slate-100 pt-10">
-                  <div className=" grid grid-cols-1 md:grid-cols-2">
-                    <div>
-                      <div className="pb-32">
-                        <h1 className="uppercase text-2xl md:text-4xl font-bold p-3 mb-2">
-                          {selectedTab.title}
-                        </h1>
-                        <hr className=" border-4 border-blue-600 opacity-90" />
-                        <p className=" md:text-xl p-2 text-left opacity-90">
-                          {selectedTab.text}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="">
-                      <Carousel slides={selectedTab.images} />
-                    </div>
+                <div className=" bg-slate-100 pt-0 h-auto">
+                  <div className=" h-auto">
+                    <DepartamentItem selectedTab={selectedTab} />
                   </div>
                 </div>
               </motion.div>
