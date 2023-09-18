@@ -1,10 +1,14 @@
 import React from "react";
 export default function Membrii({ members, grid }) {
-  const content = `grid lg:grid-cols-${grid} md:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-10 md:mx-7 `;
+  const content = `grid ${
+    grid === 5
+      ? "md:grid-cols-5 grid-cols-2 md:gap-10 md:mx-7"
+      : "grid-cols-2 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-10 md:mx-7"
+  }`;
   return (
     <>
       <div className=" md:pb-5 my-10">
-        <div className={content}>
+        <div className={`${content}`}>
           {members.map((member, index) => (
             <div
               key={index}
