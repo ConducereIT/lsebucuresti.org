@@ -10,7 +10,7 @@ const Echipa = () => {
   return (
     <>
       <Header />
-      <div className="flex mt-20 md:mx-20 ml-2 ">
+      <div className="flex mt-20 md:mx-20 ml-2">
         <h1 className=" md:text-4xl text-3xl font-semibold pb-5 text-center tracking-wider">
           Consiliul Executiv
         </h1>
