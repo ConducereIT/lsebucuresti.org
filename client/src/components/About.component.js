@@ -61,7 +61,7 @@ export default function About() {
 
                   <div>
                     <img
-                      className=" rounded-lg "
+                      className=" rounded-lg  "
                       src={LsePhoto}
                       alt="UsPhoto"
                     />
