@@ -50,8 +50,9 @@ const DepartamentItem = ({ selectedTab }) => {
               animate={{ opacity: 1, x: 0, y: 0 }}
               exit={{ opacity: 0, x: -50, y: -50 }}
               transition={{ duration: 0.5 }}
+              className="h-[100%] "
             >
-              <CarouselDepartament selectedTab={selectedTab} />
+              <CarouselDepartament />
             </motion.div>
           )}
           {index === 2 && (

@@ -205,3 +205,11 @@
 .CustomDepartamentItem {
   height: 800px;
 }
+
+.carousel-wrapper {
+  .carousel {
+    .control-dots {
+      display: none; /* Ascunde punctele de navigare */
+    }
+  }
+}
