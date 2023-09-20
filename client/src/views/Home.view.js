@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //Components
 import Header from "../components/Header.component";
@@ -11,6 +11,10 @@ import Sponsor from "../components/Sponsor.component";
 import About from "../components/About.component";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Liga Studenților Electroniști";  
+  }, []);
+
   return (
     <>
       <Header />

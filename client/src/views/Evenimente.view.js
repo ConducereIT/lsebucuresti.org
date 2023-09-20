@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // Components
 import MapCards from "../components/MapCards.component";
@@ -14,6 +14,9 @@ import {
 } from "../assets/config/config";
 
 const Evenimente = () => {
+  useEffect(() => {
+    document.title = "Evenimente";  
+  }, []);
   return (
     <>
       <Header />

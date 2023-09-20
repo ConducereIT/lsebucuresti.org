@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect} from "react";
 
 const Despre = () => {
+    useEffect(() => {
+        document.title = "Despre noi";  
+      }, []);
+   
     return (
         <h1>Despre</h1>
     );

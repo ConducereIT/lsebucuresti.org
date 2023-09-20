@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header.component";
 import Footer from "../components/Footer.component";
 import Membrii from "../components/Membrii.component";
@@ -7,6 +7,9 @@ import { membersCoord } from "../assets/config/configCoord";
 import { membersAn } from "../assets/config/configAn";
 
 const Echipa = () => {
+  useEffect(() => {
+    document.title = "Membrii";
+  }, []);
   return (
     <>
       <Header />
