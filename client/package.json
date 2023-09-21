@@ -16,6 +16,7 @@
     "react-icons": "^4.11.0",
     "react-on-screen": "^2.1.1",
     "react-parallax": "^3.5.1",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.15.0",
     "react-script": "^2.0.5",
     "react-scripts": "5.0.1",
