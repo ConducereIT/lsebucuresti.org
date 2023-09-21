@@ -24,9 +24,9 @@ export default function Header() {
                 Acasa
               </span>
             </Nav.Link>
-            <Nav.Link href="/despre">
+            <Nav.Link href="/departamente">
               <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">
-                Despre noi
+                Departamente
               </span>
             </Nav.Link>
             <Nav.Link href="/membrii">

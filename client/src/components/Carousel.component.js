@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { PiDotOutlineLight } from "react-icons/pi";
+import { RxDotFilled } from "react-icons/rx";
 
-import { slides } from "../assets/config/configCarousel";
-
-export default function Carousel() {
+export default function Carousel({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -77,7 +75,9 @@ export default function Carousel() {
                 onClick={() => goToSlide(slideIndex)}
                 className="text-2xl cursor-pointer"
               >
-                <PiDotOutlineLight size={30} />
+                <div className=" hover:text-blue-600 px-2">
+                  <RxDotFilled size={30} />
+                </div>
               </div>
             ))}
           </div>

@@ -12,7 +12,7 @@ import Evenimente from "./views/Evenimente.view";
 import Facultate from "./views/Facultate.view";
 import Faq from "./views/Faq.view";
 import Contact from "./views/Contact.view";
-import Despre from "./views/Despre.view";
+import Departamente from "./views/Departamente.view";
 
 //Components
 import Preloader from "./components/Preloader.component";
@@ -34,7 +34,7 @@ export default function App() {
           <Route path="/facultate" element={<Facultate />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/despre" element={<Despre />} />
+          <Route path="/departamente" element={<Departamente />} />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </Router>
