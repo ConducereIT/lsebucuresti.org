@@ -5,7 +5,8 @@ import Header from "../components/Header.component";
 import Footer from "../components/Footer.component";
 import LeftRight from "../components/LeftRight.component";
 
-import LsePhoto from "../assets/img/Evenimente/alteEvenimente_PrezentareaSpecializarilor.jpg";
+import firstPicture from "../assets/img/Facultate/firstPicture.webp";
+import secondPicture from "../assets/img/Facultate/secondPicture.webp";
 import {
   titleFirstFacultate,
   descriptionFirstFacultate,
@@ -24,10 +25,10 @@ const Facultate = () => {
       <LeftRight
         titleFirst={titleFirstFacultate}
         descriptionFirst={descriptionFirstFacultate}
-        firstPicture={LsePhoto}
+        firstPicture={firstPicture}
         secondTitle={secondTitleFacultate}
         secondDescription={secondDescriptionFacultate}
-        secondPicture={LsePhoto}
+        secondPicture={secondPicture}
       />
       <Footer />
     </>

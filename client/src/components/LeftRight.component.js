@@ -49,9 +49,9 @@ export default function LeftRight({
 
                   <div>
                     <img
-                      className=" rounded-lg mt-6"
+                      className=" rounded-lg mt-6 md:ml-36"
                       src={firstPicture}
-                      alt="UsPhoto"
+                      alt="ETTI"
                     />
                   </div>
                 </div>
@@ -60,17 +60,17 @@ export default function LeftRight({
                 <div className=" grid grid-cols-1 lg:grid-cols-2">
                   <div className=" pb-10">
                     <img
-                      className=" rounded-lg "
+                      className=" rounded-lg mt-36 scale-y-125 "
                       src={secondPicture}
-                      alt="ViziunePhoto"
+                      alt="Electronica"
                     />
                   </div>
                   <div className=" pb-10 md:pb-0">
                     <div className="md:pb-16 md:pl-8">
-                      <h1 className="uppercase text-xl md:text-3xl font-bold pb-3 mb-2">
+                      <h1 className="text-lg md:text-3xl font-bold pb-3 mb-2">
                         {secondTitle}
                       </h1>
-                      <hr className=" border-4 border-blue-600 opacity-90 w-1/4 pb-6" />
+                      <hr className="border-4 border-blue-600 opacity-90 w-1/4 pb-6" />
                       {secondDescription}
                     </div>
                   </div>
