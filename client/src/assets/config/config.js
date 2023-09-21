@@ -22,7 +22,31 @@ export const styledObjectExample = {
   CardBodyStyle: "",
   CardTitleStyle: "",
   CardTextStyle: "",
-  FooterStyle: "pt-0 bg-black mt-4 text-center rounded-lg",
+  FooterStyle: "pt-0 bg-black mt-4 text-center rounded-lg w-full",
+  isActive: true,
+};
+
+export const styledObjectTest = {
+  styleComponent:
+    "bg-slay-100 justify-center align-center items-center rounded-none place-items-center w-screen  md:py-10",
+
+  style:
+    "md:mt-20 customClass md:flex md:h-64 md:w-[50%] mx-auto  w-500 md:relative  mt-10 mb-10 rounded-none sm:items-center sm:align-center bg-white sm:grid sm:grid-cols-2 sm:w-[50%] sm:justify-center ",
+
+  CardHeaderStyle:
+    "rounded-none md:w-full md:h-full sm:h-5 place-items-stretch sm:mt-2 md:ml-0 md:mr-0 md:mt-0 md:mb-0 md:w-1/2 md:absolute  headerClass",
+
+  AmprentaIsActive: false,
+
+  CardBodyStyle:
+    "lg:text-right lg:w-96 bodyClass sm:w-[90%] text-center bg-slay-100",
+
+  CardTitleStyle: "text-center ",
+
+  CardTextStyle: "text-center ",
+
+  FooterStyle: "display:none",
+
   isActive: true,
 };
 
@@ -40,10 +64,9 @@ export const styledObjectEvenimente = {
   FooterStyle: "",
   isActive: false,
 };
-
 // Mapping Object
 
-export const mappingExample = [
+export const test = [
   {
     ImgSrc: "", // Path-ul din folder unde se gaseste imaginea sau locatia web.
     ImgAlt: "", // Denumirea imaginii in caz ca aceasta nu se poate afisa.
@@ -174,6 +197,25 @@ export const mappingObjectExample = [
     CardText:
       "The place is close to Barceloneta Beach and bus stop just 2 min bywalk and near to quot;Naviglioquot; where you can enjoy the mainnight life in Barcelona.",
     FooterText: "Read More",
+  },
+];
+
+export const mappingObjectTest = [
+  {
+    ImgSrc: SimulareIMG,
+    ImgAlt: "",
+    CardTitle: "SIMULARE EXAMEN ADMITERE",
+    CardText:
+      "Acest eveniment are ca scop pregătirea elevilor de liceu prin organizarea unei simulări a examenului de admitere ce are loc în fiecare an în cadrul Universității Politehnica din București. ",
+    FooterText: "",
+  },
+  {
+    ImgSrc: SimulareIMG,
+    ImgAlt: "",
+    CardTitle: "SIMULARE EXAMEN ADMITERE",
+    CardText:
+      "Acest eveniment are ca scop pregătirea elevilor de liceu prin organizarea unei simulări a examenului de admitere ce are loc în fiecare an în cadrul Universității Politehnica din București. ",
+    FooterText: "",
   },
 ];
 

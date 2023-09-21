@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
+import { ControllerUserData } from "../sdk/controllerUserData.sdk";
 
 export default function ContactComponent() {
   const [notification, setNotification] = useState(null);
@@ -32,6 +33,18 @@ export default function ContactComponent() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Trimite...");
+    const status = await ControllerUserData.sendMessage(
+      formDetails.firstName,
+      formDetails.lastName,
+      formDetails.email,
+      formDetails.phone,
+      formDetails.message,
+    );
+    if (status.status) {
+      showNotification(status.message);
+      setButtonText("Trimite");
+      setFormDetails(formInitialDetails);
+    }
   };
 
   return (
