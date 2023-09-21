@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import mitclima from "../assets/img/MitClima-2.png";
-import etti from "../assets/img/ETTI.png";
+import etti from "../assets/img/ETTI.webp";
 import mitsubishi from "../assets/img/Mitsubishi.png";
 import upb from "../assets/img/UPB.png";
 import mayo from "../assets/img/4mayo.png";
@@ -43,42 +43,42 @@ const Sponsor = () => {
               to="https://mitclima.ro/"
               target="_blank"
             >
-              <img src={mitclima}></img>
+              <img src={mitclima} alt="mitclima"></img>
             </Link>
             <Link
               className="h-40 w-40 flex items-center justify-center hover:scale-110 duration-300"
               to="http://www.electronica.pub.ro/"
               target="_blank"
             >
-              <img src={etti}></img>
+              <img src={etti} alt="etti"></img>
             </Link>
             <Link
               className="h-40 w-40 flex items-center justify-center hover:scale-110 duration-300"
               to="https://www.mitsubishielectric.com/en/index.html"
               target="_blank"
             >
-              <img src={mitsubishi}></img>
+              <img src={mitsubishi} alt="mitsubishi"></img>
             </Link>
             <Link
               className="h-40 w-40 flex items-center justify-center hover:scale-110 duration-300"
               to="https://upb.ro/"
               target="_blank"
             >
-              <img src={upb}></img>
+              <img src={upb} alt="upb"></img>
             </Link>
             <Link
               className="h-40 w-40 flex items-center justify-center mr-6 hover:scale-110 duration-300"
               to="https://4mayo.ro/"
               target="_blank"
             >
-              <img src={mayo}></img>
+              <img src={mayo} alt="mayo"></img>
             </Link>
             <Link
               className="h-40 w-40 flex items-center justify-center hover:scale-110 duration-300"
               to="https://www.hipo.ro/"
               target="_blank"
             >
-              <img src={hipo}></img>
+              <img src={hipo} alt="hipo"></img>
             </Link>
           </div>
         </div>
