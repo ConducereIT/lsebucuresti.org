@@ -37,7 +37,7 @@ const Sponsor = () => {
           <div className="text-3xl tracking-wider font-bold mb-3">
             PARTENERI
           </div>
-          <div className="flex flex-col items-center justify-around md:flex-row">
+          <div className="flex flex-col items-center justify-around gap-10 md:flex-row">
             <Link
               className="h-40 w-40 flex items-center justify-center hover:scale-110 duration-300"
               to="https://mitclima.ro/"
