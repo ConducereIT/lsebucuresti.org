@@ -4,24 +4,40 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import Home from "./views/Home";
+
+// View
+import Home from "./views/Home.view";
+import Echipa from "./views/Echipa.view";
+import Evenimente from "./views/Evenimente.view";
+import Facultate from "./views/Facultate.view";
+import Faq from "./views/Faq.view";
+import Contact from "./views/Contact.view";
+import Departamente from "./views/Departamente.view";
+
+//Components
+import Preloader from "./components/Preloader.component";
+import { PreloaderProvider } from "./components/PreloaderProvider.component";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./App.css";
 
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/membrii" element={<Home />} />
-        <Route path="/evenimente" element={<Home />} />
-        <Route path="/facultate" element={<Home />} />
-        <Route path="/faq" element={<Home />} />
-        <Route path="/contact" element={<Home />} />
-        <Route path="/despre" element={<Home />} />
-        <Route path="*" element={<Navigate replace to="/" />} />
-      </Routes>
-    </Router>
+    <PreloaderProvider>
+      <Preloader />
+      <Router basename="/">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/membrii" element={<Echipa />} />
+          <Route path="/evenimente" element={<Evenimente />} />
+          <Route path="/facultate" element={<Facultate />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/departamente" element={<Departamente />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
+        </Routes>
+      </Router>
+    </PreloaderProvider>
   );
 }

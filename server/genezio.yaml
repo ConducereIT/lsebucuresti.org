@@ -1,0 +1,19 @@
+name: lsebucuresti-backend
+region: eu-central-1
+cloudProvider: genezio
+sdk:
+  language: js
+  path: ../client/src/sdk
+scripts:
+  preBackendDeploy: npm install
+  preFrontendDeploy: cd ../client && npm install && npm run build
+frontend:
+  path: ../client/build
+  subdomain: chocolate-extreme-armadillo
+classes:
+  - path: mailer.ts
+    type: jsonrpc
+    methods: []
+  - path: controllerUserData.ts
+    type: jsonrpc
+    methods: []
