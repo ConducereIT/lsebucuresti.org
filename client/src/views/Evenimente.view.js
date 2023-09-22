@@ -12,10 +12,11 @@ import {
   styledObjectEvenimente,
   mappingObjectEvenimente,
 } from "../assets/config/config";
+import Footer from "../components/Footer.component";
 
 const Evenimente = () => {
   useEffect(() => {
-    document.title = "Evenimente";  
+    document.title = "Evenimente";
   }, []);
   return (
     <>
@@ -26,6 +27,7 @@ const Evenimente = () => {
         mappingObject={mappingObjectEvenimente}
         footerOnClick={() => {}}
       />
+      <Footer />
     </>
   );
 };
