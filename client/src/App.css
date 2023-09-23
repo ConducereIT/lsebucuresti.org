@@ -353,7 +353,27 @@ h1 {
 
 #scene.expand h1 {
   animation-fill-mode: forwards;
-  animation-name: text-zoom, text-fade-in, text-glowing;
+  animation-name: text-zoom, text-fade-in;
+  animation-duration: 5s, 1s, 1s;
+  animation-timing-function: ease-out, ease-in-out, ease-in-out;
+  animation-delay: 3s, 3s, 0s;
+  animation-iteration-count: 1, 1, infinite;
+  animation-direction: normal, normal, alternate;
+}
+
+#scene.expand h2 {
+  animation-fill-mode: forwards;
+  animation-name: text-zoom, text-fade-in;
+  animation-duration: 5s, 1s, 1s;
+  animation-timing-function: ease-out, ease-in-out, ease-in-out;
+  animation-delay: 3s, 3s, 0s;
+  animation-iteration-count: 1, 1, infinite;
+  animation-direction: normal, normal, alternate;
+}
+
+#scene.expand p {
+  animation-fill-mode: forwards;
+  animation-name: text-zoom, text-fade-in;
   animation-duration: 5s, 1s, 1s;
   animation-timing-function: ease-out, ease-in-out, ease-in-out;
   animation-delay: 3s, 3s, 0s;
