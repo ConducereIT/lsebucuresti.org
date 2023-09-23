@@ -31,8 +31,10 @@ const UnderWorking = () => {
       <div id="starter">press enter</div>
       <div id="scene">
         <div id="curtain">
-          <Header />
-          <Banner />
+          <div>
+            <Header />
+            <Banner />
+          </div>
           <div className="ground"></div>
           <div className="left"></div>
           <div className="right"></div>
