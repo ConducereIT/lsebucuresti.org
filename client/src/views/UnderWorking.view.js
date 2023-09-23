@@ -31,6 +31,9 @@ const UnderWorking = () => {
           <div className="w-auto h-[80%]">
             <Header />
             <Banner />
+            <div className="w-auto h-96">
+              <h1>Ceva</h1>
+            </div>
             <Footer />
           </div>
           <div className="ground"></div>
