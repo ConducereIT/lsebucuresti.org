@@ -26,7 +26,7 @@ const UnderWorking = () => {
       <div id="starter" onClick={showTime} style={{ cursor: "pointer" }}>
         Apasa aici!
       </div>
-      <div id="scene" className="w-screen h-screen">
+      <div id="scene" className="w-screen h-[80%]">
         <div id="curtain" className={isCurtainOpen ? "open" : ""}>
           <div className="">
             <Header />
