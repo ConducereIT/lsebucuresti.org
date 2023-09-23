@@ -23,16 +23,12 @@ const UnderWorking = () => {
 
   return (
     <>
-      <div
-        id="starter"
-        onClick={showTime} // Adaugă handler de clic
-        style={{ cursor: "pointer" }}
-      >
+      <div id="starter" onClick={showTime} style={{ cursor: "pointer" }}>
         Apasa aici!
       </div>
-      <div id="scene">
+      <div id="scene" className="w-screen h-screen">
         <div id="curtain" className={isCurtainOpen ? "open" : ""}>
-          <div>
+          <div className="">
             <Header />
             <Banner />
             <Footer />
