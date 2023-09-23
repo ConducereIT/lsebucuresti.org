@@ -4,7 +4,7 @@ import Logo from "../assets/img/LogoWhite.png";
 
 export default function Header() {
   return (
-    <Navbar expand="lg" className=" bg-blue-600 -z-10">
+    <Navbar expand="lg" className=" bg-blue-600 ">
       <Container>
         <Navbar.Brand href="/">
           <div className="flex">

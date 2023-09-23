@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Banner from "../components/Banner.component";
 import Header from "../components/Header.component";
+import Footer from "../components/Footer.component";
 
 const UnderWorking = () => {
   const [isCurtainOpen, setCurtainOpen] = useState(false);
@@ -34,6 +35,7 @@ const UnderWorking = () => {
           <div>
             <Header />
             <Banner />
+            <Footer />
           </div>
           <div className="ground"></div>
           <div className="left"></div>

@@ -279,7 +279,7 @@ body {
   height: 10000px;
   margin-left: -5000px;
   border-radius: 100%;
-  box-shadow: 0 0 100px 100px white;
+  /* box-shadow: 0 0 100px 100px white; */
 }
 
 h1 {
@@ -294,7 +294,7 @@ h1 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 10em;
-  color: white;
+  /* color: white; */
   transform: scale(0.75);
   opacity: 0;
 }
@@ -402,8 +402,8 @@ h1 {
     width: 1200px;
     left: 50%;
     margin-left: -600px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 0 0 2px white inset;
+    /* background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 2px white inset; */
   }
   to {
     width: 140%;
