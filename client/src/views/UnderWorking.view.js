@@ -1,43 +1,44 @@
 import React, { useState } from "react";
-
-import Header from "../components/Header.component";
 import Banner from "../components/Banner.component";
+import Header from "../components/Header.component";
 
-//images
+document.body.addEventListener("onload", focus());
+document.addEventListener("keydown", detectSpaceKey);
 
-import CortinaDeschisa from "../assets/img/Cortina/deschis.png";
+function detectSpaceKey(event) {
+  if (event.keyCode == 13) {
+    showTime();
+  }
+}
 
+function showTime() {
+  var curtain = document.getElementById("curtain");
+  curtain.className = "open";
+
+  var scene = document.getElementById("scene");
+  scene.className = "expand";
+
+  var starter = document.getElementById("starter");
+  starter.className = "fade-out";
+
+  setTimeout(function () {
+    starter.style.display = "none";
+  }, 2000);
+}
 const UnderWorking = () => {
-  // Starea locală pentru a urmări dacă div-ul este pe hover sau nu
-  const [isHovered, setIsHovered] = useState(false);
-
-  // Funcție pentru a schimba starea pe hover
-  const handleHover = () => {
-    setIsHovered(!isHovered);
-  };
-
-  // Imaginea de fundal pentru div
-  const backgroundImage = isHovered ? `url(${CortinaDeschisa})` : "url()";
-
-  // Stilurile CSS pentru div
-  const divStyle = {
-    width: "auto",
-    height: "auto",
-    background: backgroundImage,
-    backgroundSize: "cover",
-    transition: " 0.3s ease-in-out",
-  };
-
   return (
-    <div
-      className="hover-change-background"
-      style={divStyle}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleHover}
-    >
-      <Header />
-      <Banner />
-    </div>
+    <>
+      <div id="starter">press enter</div>
+      <div id="scene">
+        <div id="curtain">
+          <Header />
+          <Banner />
+          <div className="ground"></div>
+          <div className="left"></div>
+          <div className="right"></div>
+        </div>
+      </div>
+    </>
   );
 };
 
