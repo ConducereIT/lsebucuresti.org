@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 // View
+import UnderWorking from "./views/UnderWorking.view";
 import Home from "./views/Home.view";
 import Echipa from "./views/Echipa.view";
 import Evenimente from "./views/Evenimente.view";
@@ -28,13 +29,13 @@ export default function App() {
       <Preloader />
       <Router basename="/">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/membrii" element={<Echipa />} />
+          <Route path="/" element={<UnderWorking />} />
+          {/* <Route path="/membrii" element={<Echipa />} />
           <Route path="/evenimente" element={<Evenimente />} />
           <Route path="/facultate" element={<Facultate />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/departamente" element={<Departamente />} />
+          <Route path="/departamente" element={<Departamente />} /> */}
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </Router>
