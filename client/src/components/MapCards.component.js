@@ -1,5 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useAnimation,
+} from "framer-motion/dist/framer-motion";
 import CardView from "./Card.component";
 import { style } from "@motionone/dom";
 

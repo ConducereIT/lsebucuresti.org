@@ -2,7 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { Background, Parallax } from "react-parallax";
 import LseBanner from "../assets/img/LseBanner.png";
 import AnimatedCounter from "./AnimatedCounter.component";
-import { motion, useInView, useAnimation } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useAnimation,
+} from "framer-motion/dist/framer-motion";
 
 export default function Stats() {
   const ref = useRef(null);

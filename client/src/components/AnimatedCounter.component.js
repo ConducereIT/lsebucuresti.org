@@ -5,7 +5,7 @@ import {
   useInView,
   useMotionValue,
   useTransform,
-} from "framer-motion";
+} from "framer-motion/dist/framer-motion";
 
 export default function AnimatedCounter({ from, to }) {
   const count = useMotionValue(from);

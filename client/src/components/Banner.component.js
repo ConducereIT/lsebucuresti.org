@@ -6,7 +6,11 @@ import videoBanner from "../assets/video/videoBanner.mp4";
 import LseBanner from "../assets/img/LseBanner.png";
 
 //Packages
-import { motion, useInView, useAnimation } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useAnimation,
+} from "framer-motion/dist/framer-motion";
 
 const Banner = () => {
   const ref = useRef(null);
