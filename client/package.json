@@ -20,7 +20,8 @@
     "react-script": "^2.0.5",
     "react-scripts": "4.0.3",
     "reactstrap": "^9.1.4",
-    "web-vitals": "^3.4.0"
+    "web-vitals": "^3.4.0",
+    "@babel/plugin-transform-private-property-in-object": "7.22.11"
   },
   "scripts": {
     "start": "react-scripts start",
