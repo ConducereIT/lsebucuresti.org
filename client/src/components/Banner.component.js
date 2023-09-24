@@ -68,9 +68,9 @@ const Banner = () => {
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.25 }}
             >
-              <h1 className="text-3xl font-extrabold sm:text-5xl lg:p-4 text-white">
+              <h2 className="text-3xl font-extrabold sm:text-5xl lg:p-4 text-white">
                 Liga Studenților
-              </h1>
+              </h2>
               <h2 className="text-3xl font-extrabold text-blue-600 sm:text-5xl">
                 Electroniști
               </h2>
@@ -83,6 +83,9 @@ const Banner = () => {
               >
                 ”{text[currentIndex]}”
               </motion.p>
+              <h1 className="text-3xl font-extrabold text-yellow-600 sm:text-5xl">
+                Work in Progress...
+              </h1>
             </motion.div>
           </div>
         </div>

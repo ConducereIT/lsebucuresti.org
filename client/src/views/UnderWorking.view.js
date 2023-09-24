@@ -28,13 +28,9 @@ const UnderWorking = () => {
       </div>
       <div id="scene">
         <div id="curtain" className={isCurtainOpen ? "open" : ""}>
-          <div className="w-auto h-[80%]">
+          <div>
             <Header />
             <Banner />
-            <div className="w-auto h-96">
-              <h1>Ceva</h1>
-            </div>
-            <Footer />
           </div>
           <div className="ground"></div>
           <div className="left"></div>

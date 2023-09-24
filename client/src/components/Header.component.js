@@ -4,7 +4,10 @@ import Logo from "../assets/img/LogoWhite.png";
 
 export default function Header() {
   return (
-    <Navbar expand="lg" className=" bg-blue-600 -z-10">
+    <Navbar
+      expand="lg"
+      className="bg-blue-600 md:-z-10 scale-x-75 md:scale-x-100"
+    >
       <Container>
         <Navbar.Brand href="/">
           <div className="flex">
@@ -15,7 +18,7 @@ export default function Header() {
           </div>
         </Navbar.Brand>
         <div className="flex justify-center content-center">
-          <Navbar.Toggle className=" bg-white" />
+          <Navbar.Toggle className="bg-white" />
         </div>
         <Navbar.Collapse className=" justify-content-end">
           <Nav className=" gap-2 md:gap-4">
