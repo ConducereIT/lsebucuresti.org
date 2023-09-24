@@ -1,9 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import {
-  motion,
-  useInView,
-  useAnimation,
-} from "framer-motion/dist/framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function LeftRight({
   firstPicture,

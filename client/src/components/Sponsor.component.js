@@ -1,9 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import {
-  motion,
-  useInView,
-  useAnimation,
-} from "framer-motion/dist/framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 import mitclima from "../assets/img/MitClima-2.png";
 import etti from "../assets/img/ETTI.webp";

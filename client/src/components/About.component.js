@@ -1,10 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import LsePhoto from "../assets/img/Evenimente/alteEvenimente_PrezentareaSpecializarilor.jpg";
-import {
-  motion,
-  useInView,
-  useAnimation,
-} from "framer-motion/dist/framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 import AboutFaq from "./AboutFaq.component";
 export default function About() {
   const ref = useRef(null);

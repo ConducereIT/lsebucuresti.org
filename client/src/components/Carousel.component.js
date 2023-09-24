@@ -1,9 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-  motion,
-  useInView,
-  useAnimation,
-} from "framer-motion/dist/framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion/dist/framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import CarouselDepartament from "./Carousel.component";
 import Descriere from "./Descriere.component";
 
