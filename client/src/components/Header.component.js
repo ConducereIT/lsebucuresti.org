@@ -34,7 +34,7 @@ export default function Header() {
             </Nav.Link>
             <Nav.Link href="/membrii">
               <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">
-                Membrii
+                Membri
               </span>
             </Nav.Link>
             <Nav.Link href="/evenimente">
