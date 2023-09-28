@@ -29,10 +29,10 @@ export default function App() {
       <Router basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/membrii" element={<Echipa />} />
+          <Route path="/membri" element={<Echipa />} />
           <Route path="/evenimente" element={<Evenimente />} />
           <Route path="/facultate" element={<Facultate />} />
-          <Route path="/faq" element={<Faq />} />
+          {/*<Route path="/faq" element={<Faq />} />*/}
           <Route path="/contact" element={<Contact />} />
           <Route path="/departamente" element={<Departamente />} />
           <Route path="*" element={<Navigate replace to="/" />} />

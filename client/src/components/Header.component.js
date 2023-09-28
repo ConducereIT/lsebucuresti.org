@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import Logo from "../assets/img/LogoWhite.png";
+import Logo from "../assets/img/LogoWhite.webp";
 
 export default function Header() {
   return (
@@ -29,9 +29,9 @@ export default function Header() {
                 Departamente
               </span>
             </Nav.Link>
-            <Nav.Link href="/membrii">
+            <Nav.Link href="/membri">
               <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">
-                Membrii
+                Membri
               </span>
             </Nav.Link>
             <Nav.Link href="/evenimente">
@@ -44,11 +44,11 @@ export default function Header() {
                 Facultate
               </span>
             </Nav.Link>
-            <Nav.Link href="/faq">
-              <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">
-                FAQ
-              </span>
-            </Nav.Link>
+            {/*<Nav.Link href="/faq">*/}
+            {/*  <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">*/}
+            {/*    FAQ*/}
+            {/*  </span>*/}
+            {/*</Nav.Link>*/}
             <Nav.Link href="/contact">
               <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">
                 Contact
