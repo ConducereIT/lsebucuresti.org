@@ -9,7 +9,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-import AmprentaSVG from "../assets/img/LogoLiga/icon_logoLSEblue.svg";
+import AmprentaSVG from "../assets/img/LogoLiga/icon_logoLSEblue.webp";
 
 const CardView = ({
   styleCard,

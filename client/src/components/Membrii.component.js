@@ -12,12 +12,13 @@ export default function Membrii({ members, grid, imgStyle }) {
           {members.map((member, index) => (
             <div
               key={index}
-              className="m-2 md:m-0 max-w-sm rounded overflow-hidden duration-300 bg-gray-100 hover:shadow-xl hover:shadow-black/40"
+              className="m-2 md:m-0 max-w-sm overflow-hidden duration-300 bg-gray-100 hover:shadow-xl hover:shadow-black/40"
             >
               <img
                 className={imgStyle}
                 src={member.image}
                 alt="Poza membru"
+                loading="lazy"
                 width={100}
                 height={100}
               />

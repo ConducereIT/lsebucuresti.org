@@ -13,6 +13,11 @@ import {
   mappingObjectEvenimente,
 } from "../assets/config/config";
 import Footer from "../components/Footer.component";
+import { configEvenimente } from "../assets/config/configEvenimente";
+
+// shaffle configEvenimente
+
+const shuffle = configEvenimente.sort(() => Math.random() - 0.5);
 
 const Evenimente = () => {
   useEffect(() => {
@@ -21,7 +26,7 @@ const Evenimente = () => {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner video={shuffle[0].video} LseBanner={shuffle[0].LseBanner} firstTitle={shuffle[0].firstTitle} secondTitle={shuffle[0].secondTitle} />
       <MapCards
         styledObject={styledObjectEvenimente}
         mappingObject={mappingObjectEvenimente}

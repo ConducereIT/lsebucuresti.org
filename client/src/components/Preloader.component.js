@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { PreloaderContext } from "./PreloaderProvider.component";
-import LogoWhite from "../assets/img/LogoLiga/icon_logoLSEblue.svg";
+import LogoWhite from "../assets/img/LogoLiga/icon_logoLSEblue.webp";
 const Preloader = () => {
   const { isLoading } = useContext(PreloaderContext);
 

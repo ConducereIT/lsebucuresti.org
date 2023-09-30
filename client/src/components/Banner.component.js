@@ -1,14 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Parallax, Background } from "react-parallax";
 
-//Assets
-import videoBanner from "../assets/video/videoBanner.mp4";
-import LseBanner from "../assets/img/LseBanner.webp";
-
 //Packages
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const Banner = () => {
+export default function Banner({ video, LseBanner, firstTitle, secondTitle }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -44,7 +40,7 @@ const Banner = () => {
       >
         <Background className="relative w-screen h-screen filter">
           <video
-            src={videoBanner}
+            src={video}
             className="object-cover h-full w-full hidden sm:block"
             autoPlay={true}
             muted={true}
@@ -69,10 +65,10 @@ const Banner = () => {
               transition={{ duration: 0.5, delay: 0.25 }}
             >
               <h1 className="text-3xl font-extrabold sm:text-5xl lg:p-4 text-white">
-                Liga Studenților
+                {firstTitle}
               </h1>
               <h2 className="text-3xl font-extrabold text-blue-600 sm:text-5xl">
-                Electroniști
+                {secondTitle}
               </h2>
               <motion.p
                 initial={{ y: 10, opacity: 0 }}
@@ -90,5 +86,3 @@ const Banner = () => {
     </>
   );
 };
-
-export default Banner;
