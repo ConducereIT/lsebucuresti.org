@@ -21,7 +21,6 @@ const MapCards = ({
       slideControls.start("visible");
     }
   }, [isInView]);
-  //
 
   const design = {
     styleComponent: styledObject.styleComponent,
