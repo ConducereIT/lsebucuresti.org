@@ -5,10 +5,10 @@ import MapCards from "../components/MapCards.component";
 import Header from "../components/Header.component";
 import Banner from "../components/Banner.component";
 
+import AmprentaSVG from "../assets/img/LogoLiga/icon_logoLSEblue.webp";
+
 // Config
 import {
-  styledObjectTest,
-  mappingObjectTest,
   styledObjectEvenimente,
   mappingObjectEvenimente,
 } from "../assets/config/config";
@@ -40,6 +40,7 @@ const Evenimente = () => {
         firstTitle={shuffle[0].firstTitle}
         secondTitle={shuffle[0].secondTitle}
       />
+
       <LeftRight
         titleFirst={titleFirstEvenimente}
         descriptionFirst={descriptionFirstEvenimente}
@@ -48,10 +49,12 @@ const Evenimente = () => {
         secondDescription={secondDescriptionEvenimente}
         secondPicture={secondPicture}
       />
+
       <MapCards
         styledObject={styledObjectEvenimente}
         mappingObject={mappingObjectEvenimente}
         footerOnClick={() => {}}
+        AmprentaSVG={AmprentaSVG}
       />
       <Footer />
     </>

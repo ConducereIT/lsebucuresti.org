@@ -52,9 +52,9 @@ export const styledObjectTest = {
 
 export const styledObjectEvenimente = {
   styleComponent:
-    "w-full flex flex-wrap justify-center bg-color-ev p-2 sm:p-10 mt-5 sm:mt-40 mb-5 sm:mb-40 md:h-auto rounded-none",
+    "w-full flex flex-wrap justify-center bg-color-ev p-2 sm:p-10 mt-5 sm:mt-40 md:mb-[-1px] sm:mb-40 md:h-auto rounded-none ",
   style:
-    "md:!h-180 w-full sm:w-1/3 p-4 sm:w-96 sm:h-auto m-5 mt-6 w-96 border p-4 border-white bg-color-ev border-2 border-white hover:shadow-xl transition duration-300 shadow-white",
+    "md:!h-180  w-full sm:w-1/3 p-4 sm:w-96 sm:h-auto m-5 mt-6 w-96 border p-4 border-white bg-color-ev border-2 border-opacity-50 hover:shadow-xl transition duration-300 shadow-white",
   CardHeaderStyle:
     "relative h-auto md:w-full md:!ml-0 sm:ml-0 sm:mr-0 sm:w-96 rounded-none",
   AmprentaIsActive: true,

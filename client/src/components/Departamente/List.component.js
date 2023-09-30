@@ -6,6 +6,8 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import DepartamentItem from "./Item.component";
 import Banner from "../Banner.component";
 
+import video from "../../assets/video/apv.mp4";
+
 export default function DepartamenteList({ itemArray }) {
   const [selectedTab, setSelectedTab] = useState(itemArray[0]);
 
@@ -61,7 +63,12 @@ export default function DepartamenteList({ itemArray }) {
                 exit={{ y: -10, opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <Banner />
+                <Banner
+                  firstTitle={"Departamentul"}
+                  secondTitle={"Cultural"}
+                  video={video}
+                  LseBanner={video}
+                />
                 <div className="   h-auto">
                   <div className=" h-auto">
                     <DepartamentItem selectedTab={selectedTab} />

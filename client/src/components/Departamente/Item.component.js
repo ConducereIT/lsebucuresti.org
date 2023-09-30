@@ -3,6 +3,14 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import CarouselDepartament from "./Carousel.component";
 import Descriere from "./Descriere.component";
+import Conducere from "./Conducere.component";
+
+import {
+  styledObjectConducere,
+  mappingObjectConducere,
+} from "../../assets/config/configDepartamente";
+
+import AmprentaSVG from "../../assets/img/LogoLiga/icon_logoLSEblue.webp";
 
 const DepartamentItem = ({ selectedTab }) => {
   const [index, setIndex] = useState(0);
@@ -22,14 +30,14 @@ const DepartamentItem = ({ selectedTab }) => {
           onClick={() => setIndex(1)}
         >
           Evenimente
-          <hr className="border-2 border-blue-600 opacity-90 w-4/4 pb-6 md:mt-2" />
+          <hr className="border-2 border-blue-600 opacity-90 w-5/4 pb-6 md:mt-2" />
         </motion.button>
         <motion.button
           className="  text-base md:ml-20  md:text-2xl md:font-semibold md:relative md:inline-block  md:w-32 md:h-2/3 text-black"
           onClick={() => setIndex(2)}
         >
           Conducere
-          <hr className="border-2 border-blue-600 opacity-90 w-4/4 pb-6 md:mt-2" />
+          <hr className="border-2 border-blue-600 opacity-90 w-5/4 pb-6 md:mt-2" />
         </motion.button>
       </div>
       <motion.div className=" md:h-[70%] md:w-full">
@@ -65,8 +73,13 @@ const DepartamentItem = ({ selectedTab }) => {
               animate={{ opacity: 1, x: 0, y: 0 }}
               exit={{ opacity: 0, x: 50, y: 0 }}
               transition={{ duration: 0.5 }}
+              className="componenta3 h-[100%]"
             >
-              <h>Index 3</h>
+              <Conducere
+                styledObject={styledObjectConducere}
+                mappingObject={mappingObjectConducere}
+                AmprentaSVG={AmprentaSVG}
+              />
             </motion.div>
           )}
         </div>
