@@ -83,7 +83,7 @@ export const membersFaculty = [
         title: "Prodecan",
     },
     {
-        image: Stanciu,
+        image: Avatar,
         nume: "Conf.dr.ing Mihai STANCIU",
         title: "Prodecan",
     },

@@ -62,9 +62,9 @@ export default function About() {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="w-full h-full">
                     <img
-                      className=" rounded-lg  "
+                      className=" rounded-lg w-full h-full  "
                       src={LsePhoto}
                       alt="UsPhoto"
                     />
@@ -73,9 +73,9 @@ export default function About() {
               </div>
               <div className=" md:pt-20 pt-10">
                 <div className=" grid grid-cols-1 lg:grid-cols-2">
-                  <div className=" pb-10">
+                  <div className=" pb-10 w-full h-full">
                     <img
-                      className=" rounded-lg "
+                      className=" rounded-lg w-full h-full "
                       src={LsePhotoSecond}
                       alt="ViziunePhoto"
                     />
@@ -110,9 +110,9 @@ export default function About() {
                     <AboutFaq />
                   </div>
 
-                  <div>
+                  <div className="w-full h-full">
                     <img
-                      className=" rounded-lg "
+                      className=" rounded-lg w-full h-full"
                       src={LsePhotoThird}
                       alt="FaqPhoto"
                     />
