@@ -34,11 +34,11 @@ const DepartamentItem = ({ selectedTab }) => {
           {index === 0 && (
             <motion.div
               key="component1"
-              initial={{ opacity: 0, x: -50, y: -50 }}
+              initial={{ opacity: 0, x: -50, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
-              exit={{ opacity: 0, x: -50, y: -50 }}
+              exit={{ opacity: 0, x: 50, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-slate-100"
+              className="bg-slate-100 flex items-center justify-self-center justify-center py-20"
             >
               <Descriere />
             </motion.div>
@@ -46,9 +46,9 @@ const DepartamentItem = ({ selectedTab }) => {
           {index === 1 && (
             <motion.div
               key="component2"
-              initial={{ opacity: 0, x: -50, y: -50 }}
+              initial={{ opacity: 0, x: -50, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
-              exit={{ opacity: 0, x: -50, y: -50 }}
+              exit={{ opacity: 0, x: 50, y: 0 }}
               transition={{ duration: 0.5 }}
               className="h-[100%] "
             >
@@ -58,9 +58,9 @@ const DepartamentItem = ({ selectedTab }) => {
           {index === 2 && (
             <motion.div
               key="component3"
-              initial={{ opacity: 0, x: -50, y: -50 }}
+              initial={{ opacity: 0, x: -50, y: 0 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
-              exit={{ opacity: 0, x: -50, y: -50 }}
+              exit={{ opacity: 0, x: 50, y: 0 }}
               transition={{ duration: 0.5 }}
             >
               <h>Index 3</h>
