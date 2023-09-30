@@ -1,5 +1,5 @@
 import React from "react";
-export default function Membrii({ members, grid, imgStyle }) {
+export default function Membrii({ members, grid }) {
   const content = `grid ${
     grid === 5
       ? "md:grid-cols-5 grid-cols-2 md:gap-10 md:mx-7"
@@ -12,17 +12,17 @@ export default function Membrii({ members, grid, imgStyle }) {
           {members.map((member, index) => (
             <div
               key={index}
-              className="m-2 md:m-0 max-w-sm rounded overflow-hidden duration-300 bg-gray-100 hover:shadow-xl hover:shadow-black/40"
+              className=" m-2 md:m-0 max-w-sm rounded overflow-hidden duration-300 bg-gray-100 hover:shadow-xl hover:shadow-black/40"
             >
               <img
-                className={imgStyle}
+                className="w-full"
                 src={member.image}
                 alt="Poza membru"
                 width={100}
                 height={100}
               />
               <div className="px-6 py-4">
-                <div className="mb-2 flex justify-center">
+                <div className="mb-2 flex justify-center ">
                   <p className="font-bold text-xl md:text-3xl text-center">
                     {member.nume}
                   </p>

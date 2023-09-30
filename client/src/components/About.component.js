@@ -1,10 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import LsePhoto from "../assets/img/cover/cinesuntem.webp";
-import LsePhotoSecond from "../assets/img/cover/viziune.webp";
-import LsePhotoThird from "../assets/img/cover/structura.webp";
+import LsePhoto from "../assets/img/Evenimente/alteEvenimente_PrezentareaSpecializarilor.jpg";
 import { motion, useInView, useAnimation } from "framer-motion";
 import AboutFaq from "./AboutFaq.component";
-
 export default function About() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -62,9 +59,9 @@ export default function About() {
                     </div>
                   </div>
 
-                  <div className="w-full h-full">
+                  <div>
                     <img
-                      className=" rounded-lg w-full h-full  "
+                      className=" rounded-lg  "
                       src={LsePhoto}
                       alt="UsPhoto"
                     />
@@ -73,10 +70,10 @@ export default function About() {
               </div>
               <div className=" md:pt-20 pt-10">
                 <div className=" grid grid-cols-1 lg:grid-cols-2">
-                  <div className=" pb-10 w-full h-full">
+                  <div className=" pb-10">
                     <img
-                      className=" rounded-lg w-full h-full "
-                      src={LsePhotoSecond}
+                      className=" rounded-lg "
+                      src={LsePhoto}
                       alt="ViziunePhoto"
                     />
                   </div>
@@ -110,10 +107,10 @@ export default function About() {
                     <AboutFaq />
                   </div>
 
-                  <div className="w-full h-full">
+                  <div>
                     <img
-                      className=" rounded-lg w-full h-full"
-                      src={LsePhotoThird}
+                      className=" rounded-lg "
+                      src={LsePhoto}
                       alt="FaqPhoto"
                     />
                   </div>
