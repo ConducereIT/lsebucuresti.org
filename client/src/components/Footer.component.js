@@ -4,7 +4,7 @@ import Logo from "../assets/img/LogoWhite.webp";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-blue-600 mt-16 pt-3 ">
+      <footer className="bg-blue-600  pt-3 ">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="md:flex md:items-center md:justify-between">
             <div className="flex items-center mb-4 sm:mb-0 m-2">

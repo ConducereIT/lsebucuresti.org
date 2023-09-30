@@ -1,24 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
 import DepartamentItem from "./Item.component";
+import Banner from "../Banner.component";
 
 export default function DepartamenteList({ itemArray }) {
   const [selectedTab, setSelectedTab] = useState(itemArray[0]);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mobileMediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mobileMediaQuery.matches);
+
+    const handleResize = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mobileMediaQuery.addListener(handleResize);
+    return () => {
+      mobileMediaQuery.removeListener(handleResize);
+    };
+  }, []);
+
+  const styleButton = isMobile
+    ? " text-black bg-blue-600 w-fit rounded-lg "
+    : "mt-7 text-black bg-blue-600 w-fit rounded-lg position-absolute z-10";
+
   return (
     <>
-      <div className="md:pt-5 md:pb-32 pb-10 pt-10 md:mx-52 mx-2">
+      <div className="md:pt-0  pb-32 pt-20 md:mx-52 mx-2">
         <div>
-          <div className=" bg-slate-100 flex justify-end ">
+          <div className="flex justify-end mr-5">
             <DropdownButton
               id="dropdown-basic-button"
               title={"Departament " + selectedTab.label}
               variant="primary"
               size="lg"
-              className=" bg-blue-600 w-fit rounded-lg"
+              className={styleButton}
             >
               {itemArray.map((item, index) => (
                 <Dropdown.Item
@@ -40,7 +61,8 @@ export default function DepartamenteList({ itemArray }) {
                 exit={{ y: -10, opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className=" bg-slate-100 pt-0 h-auto">
+                <Banner />
+                <div className="   h-auto">
                   <div className=" h-auto">
                     <DepartamentItem selectedTab={selectedTab} />
                   </div>
