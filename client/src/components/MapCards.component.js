@@ -3,7 +3,12 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import CardView from "./Card.component";
 import { style } from "@motionone/dom";
 
-const MapCards = ({ styledObject, mappingObject, footerOnClick }) => {
+const MapCards = ({
+  styledObject,
+  mappingObject,
+  footerOnClick,
+  AmprentaSVG,
+}) => {
   //Animation
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -63,6 +68,7 @@ const MapCards = ({ styledObject, mappingObject, footerOnClick }) => {
                 FooterText={card.FooterText}
                 FooterStyle={design.FooterStyle}
                 FooterButtonOnClickEvent={footerOnClick}
+                AmprentaSVG={AmprentaSVG}
               />
             );
           })}

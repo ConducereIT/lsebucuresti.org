@@ -1,5 +1,5 @@
 import React from "react";
-import secondPicture from "../../assets/img/Facultate/secondPicture.webp";
+import secondPicture from "../../assets/img/departamente/Cultural/ccg.webp";
 
 const Descriere = () => {
   return (
@@ -13,12 +13,9 @@ const Descriere = () => {
               </h1>
               <hr className="border-4 border-black opacity-90 w-1/4 pb-4" />
               <p>
-                ipsum dolor sit amet consectetur adipiscing elit pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas integer eget aliquet nibh praesent tristique
-                magna sit amet purus gravida quis blandit turpis cursus in hac
-                habitasse platea dictumst quisque sagittis purus sit amet
-                volutpat consequat mauris nunc congue
+                Departamentul Cultural reprezintă latura artistică a ligii,
+                locul unde studenții pot da frâu liber imaginației și spiritului
+                creativ.
               </p>
             </div>
             <div>
@@ -26,10 +23,10 @@ const Descriere = () => {
                 Unde ne gasiti?
               </h1>
               <hr className="border-4 border-black opacity-90 w-1/4 pb-6" />
-              Locatie:
+              Locatie: A05 Miercuri
               <br />
               <br />
-              Ora:
+              Ora: 20:00
             </div>
           </div>
 

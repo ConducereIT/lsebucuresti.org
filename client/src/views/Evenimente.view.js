@@ -5,10 +5,10 @@ import MapCards from "../components/MapCards.component";
 import Header from "../components/Header.component";
 import Banner from "../components/Banner.component";
 
+import AmprentaSVG from "../assets/img/LogoLiga/icon_logoLSEblue.webp";
+
 // Config
 import {
-  styledObjectTest,
-  mappingObjectTest,
   styledObjectEvenimente,
   mappingObjectEvenimente,
 } from "../assets/config/config";
@@ -26,11 +26,17 @@ const Evenimente = () => {
   return (
     <>
       <Header />
-      <Banner video={shuffle[0].video} LseBanner={shuffle[0].LseBanner} firstTitle={shuffle[0].firstTitle} secondTitle={shuffle[0].secondTitle} />
+      <Banner
+        video={shuffle[0].video}
+        LseBanner={shuffle[0].LseBanner}
+        firstTitle={shuffle[0].firstTitle}
+        secondTitle={shuffle[0].secondTitle}
+      />
       <MapCards
         styledObject={styledObjectEvenimente}
         mappingObject={mappingObjectEvenimente}
         footerOnClick={() => {}}
+        AmprentaSVG={AmprentaSVG}
       />
       <Footer />
     </>
