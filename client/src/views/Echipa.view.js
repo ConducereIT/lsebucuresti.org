@@ -6,6 +6,12 @@ import { membersCE } from "../assets/config/configCE";
 import { membersCoord } from "../assets/config/configCoord";
 import { membersAn } from "../assets/config/configAn";
 
+//shafle coordonatori
+for (let i = membersCoord.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [membersCoord[i], membersCoord[j]] = [membersCoord[j], membersCoord[i]];
+}
+
 const Echipa = () => {
   useEffect(() => {
     document.title = "Membri";
