@@ -20,7 +20,7 @@ export const descriptionFirstFacultate = (
     </p>
   </p>
 );
-export const secondTitleFacultate = "STUDII DE LICENȚĂ";
+export const secondTitleFacultate = "Studii de licență";
 export const secondDescriptionFacultate = (
     <div>
         <h1 className="text-base font-bold mb-4">Facultatea de Electronică, Telecomunicații și Tehnologia Informației</h1>
@@ -57,3 +57,49 @@ export const secondDescriptionFacultate = (
         </ul>
     </div>
 );
+
+import Avatar from "../img/Facultate/profesori/avatar.webp";
+import Carmen from "../img/Facultate/profesori/CarmenFlorea.webp"
+import Nastac from "../img/Facultate/profesori/Nastac.webp"
+import Rodica from "../img/Facultate/profesori/Rodica-Constantinescu.webp"
+import Hobincu from "../img/Facultate/profesori/hobincu.webp"
+import Laura from "../img/Facultate/profesori/laura_florea.webp"
+import Udrea from "../img/Facultate/profesori/mihnea_udrea.webp"
+import Stanciu from "../img/Facultate/profesori/mihai_stanciu.webp"
+export const membersFaculty = [
+    {
+        image: Udrea,
+        nume: "Prof. dr. ing. Mihnea UDREA",
+        title: "Decan",
+    },
+    {
+        image: Carmen,
+        nume: "S.l.dr.ing Carmen FLOREA",
+        title: "Prodecan",
+    },
+    {
+        image: Laura,
+        nume: "Conf.dr.ing Laura FLOREA",
+        title: "Prodecan",
+    },
+    {
+        image: Avatar,
+        nume: "Conf.dr.ing Mihai STANCIU",
+        title: "Prodecan",
+    },
+    {
+        image: Rodica,
+        nume: "Ș.l.dr.ing Rodica Constantinescu",
+        title: "Prodecan",
+    },
+    {
+        image: Hobincu,
+        nume: "Ș.l.dr.ing Radu HOBINCU",
+        title: "Prodecan",
+    },
+    {
+        image: Nastac,
+        nume: "Conf.dr.ing. Iulian Dumitru Năstac",
+        title: "Prodecan",
+    },
+];

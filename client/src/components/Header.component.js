@@ -7,8 +7,8 @@ export default function Header() {
     <Navbar expand="lg" className=" bg-blue-600">
       <Container>
         <Navbar.Brand href="/">
-          <div className="flex">
-            <img src={Logo} className="h-9 mr-3" alt="LSE Logo" />
+          <div className="flex h-full w-full ">
+            <img src={Logo} className="h-full w-full mr-3" alt="LSE Logo" />
             <span className="self-center md:text-2xl text-base font-semibold whitespace-nowrap text-white">
               Liga Studenților Electroniști
             </span>
