@@ -3,7 +3,7 @@ import { Parallax, Background } from "react-parallax";
 
 //Assets
 import videoBanner from "../assets/video/videoBanner.mp4";
-import LseBanner from "../assets/img/LseBanner.png";
+import LseBanner from "../assets/img/LseBanner.webp";
 
 //Packages
 import { motion, useInView, useAnimation } from "framer-motion";

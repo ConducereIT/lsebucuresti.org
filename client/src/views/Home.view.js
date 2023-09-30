@@ -23,7 +23,7 @@ export default function Home() {
       <About />
       <Stats />
       <Carousel slides={GallerySlides} />
-      <Sponsor />
+      {/*<Sponsor />*/}
       <Footer />
     </>
   );
