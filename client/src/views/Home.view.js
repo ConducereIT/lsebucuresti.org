@@ -9,6 +9,9 @@ import Carousel from "../components/Carousel.component";
 import Sponsor from "../components/Sponsor.component";
 //Config
 import { GallerySlides } from "../assets/config/configCarouselGallery";
+import videoBanner from "../assets/video/videoBanner.mp4";
+import LseBanner from "../assets/img/LseBanner.webp";
+
 
 import About from "../components/About.component";
 
@@ -19,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner firstTitle={"Liga Studenților"} secondTitle={"Electroniști"} video={videoBanner} LseBanner={LseBanner}/>
       <About />
       <Stats />
       <Carousel slides={GallerySlides} />

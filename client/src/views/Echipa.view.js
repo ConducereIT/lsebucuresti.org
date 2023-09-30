@@ -12,7 +12,7 @@ for (let i = membersCoord.length - 1; i > 0; i--) {
   [membersCoord[i], membersCoord[j]] = [membersCoord[j], membersCoord[i]];
 }
 
-const imgStyle = "w-full";
+const imgStyle = "w-full h-auto";
 
 const Echipa = () => {
   useEffect(() => {
