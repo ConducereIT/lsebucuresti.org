@@ -11,7 +11,7 @@ const Descriere = () => {
               <h1 className="text-xl md:text-3xl font-semibold pb-3 mb-2">
                 Cine suntem noi?
               </h1>
-              <hr className="border-4 border-black opacity-90 w-1/4 pb-6" />
+              <hr className="border-4 border-black opacity-90 w-1/4 pb-4" />
               <p>
                 ipsum dolor sit amet consectetur adipiscing elit pellentesque
                 habitant morbi tristique senectus et netus et malesuada fames ac
@@ -26,13 +26,16 @@ const Descriere = () => {
                 Unde ne gasiti?
               </h1>
               <hr className="border-4 border-black opacity-90 w-1/4 pb-6" />
-              DESCRIERE
+              Locatie:
+              <br />
+              <br />
+              Ora:
             </div>
           </div>
 
           <div className="w-full md:w-1/2">
             <img
-              className="rounded-lg mt-6 md:ml-6"
+              className="rounded-lg mt-6 md:ml-8"
               src={secondPicture}
               alt="ETTI"
             />
