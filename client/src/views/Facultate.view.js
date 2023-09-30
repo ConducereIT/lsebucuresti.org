@@ -16,6 +16,8 @@ import {
 import Membrii from "../components/Membrii.component";
 import { membersFaculty } from "../assets/config/configFacultate";
 
+const imgStyle = "w-full h-[50%]";
+
 const Facultate = () => {
   useEffect(() => {
     document.title = "Facultate";
@@ -39,7 +41,7 @@ const Facultate = () => {
         </h1>
       </div>
       <div className=" bg-slate-50 md:mx-20 rounded-lg">
-        <Membrii members={membersFaculty} grid={7} />
+        <Membrii members={membersFaculty} grid={7} imgStyle={imgStyle} />
       </div>
       <Footer />
     </>
