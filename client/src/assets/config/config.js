@@ -76,20 +76,57 @@ export const test = [
   },
 ];
 
-import SimulareIMG from "../img/Evenimente/alteEvenimente_simulare.jpg";
-import FastFowardImg from "../img/Evenimente/alteEvenimente_fastForward.jpg";
-import PrezentariSpecializariImg from "../img/Evenimente/alteEvenimente_PrezentareaSpecializarilor.jpg";
-import DiscoverYourFutureImg from "../img/Evenimente/alteEvenimente_discoverYourFuture.jpg";
-import WorkShopEducationImg from "../img/Evenimente/alteEvenimente_educatieFinanciara.jpg";
-import SpectacolCaritabilImg from "../img/Evenimente/alteEvenimente_spectacolulCaritabil.jpg";
-import SearaFilmImg from "../img/Evenimente/alteEvenimente_searaFilmului.jpg";
-import WorkshopConeticaImg from "../img/Evenimente/alteEvenimente_conectica.jpg";
-import TudorTanasescuImg from "../img/Evenimente/alteEvenimente_tudor.jpg";
+import SimulareIMG from "../img/Evenimente/alteEvenimente_simulare.webp";
+import FastFowardImg from "../img/Evenimente/alteEvenimente_fastForward.webp";
+import PrezentariSpecializariImg from "../img/Evenimente/alteEvenimente_PrezentareaSpecializarilor.webp";
+import DiscoverYourFutureImg from "../img/Evenimente/alteEvenimente_discoverYourFuture.webp";
+import WorkShopEducationImg from "../img/Evenimente/alteEvenimente_educatieFinanciara.webp";
+import SpectacolCaritabilImg from "../img/Evenimente/alteEvenimente_spectacolulCaritabil.webp";
+import SearaFilmImg from "../img/Evenimente/alteEvenimente_searaFilmului.webp";
+import WorkshopConeticaImg from "../img/Evenimente/alteEvenimente_conectica.webp";
+import TudorTanasescuImg from "../img/Evenimente/alteEvenimente_tudor.webp";
+import BBETTI from "../img/Evenimente/bal.webp";
+import PREADMITERE from "../img/Evenimente/preadmitere.webp";
+import ELECTRON from "../img/Evenimente/electron.webp";
+import EXPOJOBS from "../img/Evenimente/expojobs.webp";
+// import DONEAZA from "../img/Evenimente/donare.webp";
 
 export const mappingObjectEvenimente = [
+  // {
+  //   ImgSrc: DONEAZA,
+  //   ImgAlt: "DONEAZA",
+  //   CardTitle: "DONEAZĂ ȘI TU!",
+  //   CardText:
+  //     "Donează și tu! este evenimentul prin intermediul căruia studenții pot dona sânge pentru a oferi o mână de ajutor celor care au nevoie.",
+  //   FooterText: "",
+  // },
+  {
+    ImgSrc: ELECTRON,
+    ImgAlt: "ELECTRON",
+    CardTitle: "ELECTRON",
+    CardText:
+      "Electron își propune să le ofere o provocare pasionaților în electronică prin intermediul unui hackathon unde participanții vor avea ocazia să pună cap la cap diferite tehnologii, dispozitive și senzori pentru a rezolva problemele propuse.",
+    FooterText: "",
+  },
+  {
+    ImgSrc: PREADMITERE,
+    ImgAlt: "PREADMITERE",
+    CardTitle: "PREADMITERE",
+    CardText:
+      "Preadmiterea reprezintă un pas important în parcursul elevilor de liceu către un viitor în domeniul ingineriei, având ca scop testarea cunoștințelor acestora, cât și acceptarea în ciclul de licență dacă rezultatele se dovedesc a fi cele dorite",
+    FooterText: "",
+  },
+  {
+    ImgSrc: BBETTI,
+    ImgAlt: "BBETTI",
+    CardTitle: "BBETTI",
+    CardText:
+      "Balul Bobocilor oferă șansa celor mai îndrăzneți 12 boboci de a se afirma în rândul studenților, demonstrându-și talentul și carisma, sub o tematică inedită an de an.",
+    FooterText: "",
+  },
   {
     ImgSrc: SimulareIMG,
-    ImgAlt: "",
+    ImgAlt: "Simulare",
     CardTitle: "SIMULARE EXAMEN ADMITERE",
     CardText:
       "Acest eveniment are ca scop pregătirea elevilor de liceu prin organizarea unei simulări a examenului de admitere ce are loc în fiecare an în cadrul Universității Politehnica din București. ",
@@ -97,7 +134,7 @@ export const mappingObjectEvenimente = [
   },
   {
     ImgSrc: FastFowardImg,
-    ImgAlt: "",
+    ImgAlt: "FastFowardImg",
     CardTitle: "FAST FORWARD",
     CardText:
       "Fast Forward este un simulator de business care antrenează atât competențe de antreprenoriat, cât și de leadership, desfășurat pe 24 de ore, timp în care echipele au ca scop să dubleze suma oferită de organizatori. ",
@@ -105,7 +142,7 @@ export const mappingObjectEvenimente = [
   },
   {
     ImgSrc: PrezentariSpecializariImg,
-    ImgAlt: "",
+    ImgAlt: "PrezentariSpecializariImg",
     CardTitle: "PREZENTAREA SPECIALIZĂRILOR",
     CardText:
       "Departamentul Învățământ vine în ajutorul vostru cu o prezentare a opțiunilor de care beneficiați, prin ochii studenților de anul III și IV. Aceștia sunt nerăbdători să vă împărtășească din experiența lor și să vă răspundă la toate curiozitățile pe care le aveți. ",
@@ -113,7 +150,7 @@ export const mappingObjectEvenimente = [
   },
   {
     ImgSrc: DiscoverYourFutureImg,
-    ImgAlt: "",
+    ImgAlt: "DiscoverYourFutureImg",
     CardTitle: "DISCOVER YOUR FUTURE",
     CardText:
       "Dedicat studenților noștri indeciși cu privire la alegerea carierei și nu numai, Discover Your Future este un eveniment organizat de Departamentul Învățământ. Aflat la prima ediție, acesta și-a propus să aducă mai aproape de noi absolvenți ETTI ce s-au remarcat în diverse domenii specifice facultății noastre. ",
@@ -121,7 +158,7 @@ export const mappingObjectEvenimente = [
   },
   {
     ImgSrc: WorkShopEducationImg,
-    ImgAlt: "",
+    ImgAlt: "WorkShopEducationImg",
     CardTitle: "WORKSHOP EDUCAȚIE FINANCIARĂ",
     CardText:
       "Aflăm împreună despre relația oamenilor cu banii, ce înseamnă să ai un venit și care sunt categoriile de cheltuieli pe care să le urmărim lunar. De asemenea, discutăm despre gestionarea rațională a banilor și totodată despre importanța bugetului în procesul de economisire. ",
@@ -129,7 +166,7 @@ export const mappingObjectEvenimente = [
   },
   {
     ImgSrc: SpectacolCaritabilImg,
-    ImgAlt: "",
+    ImgAlt: "SpectacolCaritabilImg",
     CardTitle: "SPECTACOLUL CARITABIL",
     CardText:
       "În fiecare an, perioada Crăciunului ne îndeamnă să ne lăsăm purtați de magia sărbătorilor, iar noi suntem de-a dreptul încântați să organizăm unul dintre cele mai așteptate evenimente ale sfârșitului de an, Spectacolul Caritabil, organizat de către Departamentul Cultural al Ligii Studenților Electroniști. ",
@@ -137,7 +174,7 @@ export const mappingObjectEvenimente = [
   },
   {
     ImgSrc: SearaFilmImg,
-    ImgAlt: "",
+    ImgAlt: "SearaFilmImg",
     CardTitle: "SEARA FILMULUI",
     CardText:
       "Vrei să vezi un film cu prietenii, dar nu ai chef de cinema? Ei bine, departamentul Cultural vine in ajutorul tău cu “Seara filmului Caritabil”, un eveniment desfășurat într-o atmosferă cozy. ",
@@ -145,7 +182,7 @@ export const mappingObjectEvenimente = [
   },
   {
     ImgSrc: WorkshopConeticaImg,
-    ImgAlt: "",
+    ImgAlt: "WorkshopConeticaImg",
     CardTitle: "WORKSHOP CONECTICĂ",
     CardText:
       "Probabil ați auzit de-a lungul timpului petrecut pe băncile facultății despre rețele, conexiuni, fibră optică, semnale și tot ce mai include lumea telecomunicațiilor. Departamentul IT vine în ajutorul vostru cu un workshop în parteneriat cu Telecom Academy. ",
@@ -153,7 +190,7 @@ export const mappingObjectEvenimente = [
   },
   {
     ImgSrc: TudorTanasescuImg,
-    ImgAlt: "",
+    ImgAlt: "TudorTanasescuImg",
     CardTitle: "CONCURSUL PROFESIONAL 'TUDOR TĂNĂSESCU' ",
     CardText:
       "Concursul e destinat studenților din anii III si IV, dar și studenților aflați la master, probele vizate în cadrul concursului fiind Circuite Integrate Analogice (CIA) si Semnale, Circuite și Sisteme(SCS). ",

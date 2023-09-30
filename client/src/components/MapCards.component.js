@@ -16,7 +16,6 @@ const MapCards = ({ styledObject, mappingObject, footerOnClick }) => {
       slideControls.start("visible");
     }
   }, [isInView]);
-  //
 
   const design = {
     styleComponent: styledObject.styleComponent,

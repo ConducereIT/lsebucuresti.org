@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
-import Image from "../../assets/img/Evenimente/alteEvenimente_conectica.jpg";
+import Image from "../../assets/img/Evenimente/alteEvenimente_conectica.webp";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Slide = ({ text, image, orientation }) => {
