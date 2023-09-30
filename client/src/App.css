@@ -3,209 +3,210 @@
 @tailwind utilities;
 
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
-    color: #61dafb;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 :root {
-    --fc-border-color: black;
-    --fc-daygrid-event-dot-width: 5px;
+  --fc-border-color: black;
+  --fc-daygrid-event-dot-width: 5px;
 }
 
 .fc .fc-col-header-cell-cushion {
-    display: inline-block;
+  display: inline-block;
 }
 
 .fc {
-    max-width: 1100px;
-    margin: 0 auto;
-    width: 900px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 900px;
 }
 
 .contact {
-    padding-bottom: 0rem;
-    padding-top: 4.25rem;
+  padding-bottom: 0rem;
+  padding-top: 4.25rem;
 }
 
 .contact img {
-    width: 92%;
+  width: 92%;
 }
 
 .contact h2 {
-    font-size: 45px;
-    font-weight: 700;
-    margin-bottom: 30px;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .contact form input,
 .contact form textarea {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    color: #2563eb;
-    margin: 0 0 8px 0;
-    padding: 18px 26px;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 1px;
-    transition: 0.3s ease-in-out;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: #2563eb;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
 }
 
 .contact form input:focus,
 .contact form textarea:focus {
-    background: rgba(255, 255, 255, 1);
-    color: #121212;
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
 }
 
 .contact form input::placeholder,
 .contact form textarea::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    color: #121212;
+  font-size: 16px;
+  font-weight: 400;
+  color: #121212;
 }
 
 .contact form input:focus::placeholder,
 .contact form textarea:focus::placeholder {
-    color: #121212;
-    opacity: 0.8;
+  color: #121212;
+  opacity: 0.8;
 }
 
 .contact form button {
-    font-weight: 700;
-    color: #ffffff;
-    background-color: #2563eb;
-    padding: 14px 48px;
-    font-size: 18px;
-    margin-top: 25px;
-    border-width: 0.5px;
-    position: relative;
-    transition: 0.3s ease-in-out;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #2563eb;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-width: 0.5px;
+  position: relative;
+  transition: 0.3s ease-in-out;
 }
 
 .contact form button span {
-    z-index: 1;
-    position: relative;
+  z-index: 1;
+  position: relative;
 }
 
 .contact form button:hover {
-    border-color: #2563eb;
-    border-width: 0.5px;
-    border-radius: 0.5rem;
-    color: #2563eb;
+  border-color: #2563eb;
+  border-width: 0.5px;
+  border-radius: 0.5rem;
+  color: #2563eb;
 }
 
 .contact form button::before {
-    content: "";
-    background: #fff;
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    border-radius: 0.5rem /* 8px */;
-    transition: 0.3s ease-in-out;
+  content: "";
+  background: #fff;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 0.5rem /* 8px */;
+  transition: 0.3s ease-in-out;
 }
 
 .contact form button:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .CustomDepartamentItem {
-    height: 800px;
+  height: 800px;
 }
 
 .carousel-wrapper {
-    .carousel {
-        .control-dots {
-            display: none; /* Ascunde punctele de navigare */
+  .carousel {
+    .control-dots {
+      display: none; /* Ascunde punctele de navigare */
 
-            :root {
-                scrollbar-width: none; /* Ascunde bara de derulare verticală */
-            }
+      :root {
+        scrollbar-width: none; /* Ascunde bara de derulare verticală */
+      }
 
-            /* Pentru navigatoarele bazate pe WebKit, precum Chrome și Safari */
+      /* Pentru navigatoarele bazate pe WebKit, precum Chrome și Safari */
 
-            :root::-webkit-scrollbar {
-                width: 0.1em; /* Lățime minimă */
-            }
+      :root::-webkit-scrollbar {
+        width: 0.1em; /* Lățime minimă */
+      }
 
-            :root::-webkit-scrollbar-track {
-                background: transparent; /* Fundalul containerului de derulare */
-            }
+      :root::-webkit-scrollbar-track {
+        background: transparent; /* Fundalul containerului de derulare */
+      }
 
-            :root::-webkit-scrollbar-thumb {
-                background-color: transparent; /* Culoarea thumb-ului (butonului de derulare) */
-            }
+      :root::-webkit-scrollbar-thumb {
+        background-color: transparent; /* Culoarea thumb-ului (butonului de derulare) */
+      }
 
-            @media (min-width: 1024px) {
-                .customClass {
-                    width: 900px !important;
-                }
-
-                .customClass:nth-child(odd) {
-
-                    .bodyClass {
-                        position: absolute;
-                        right: 0;
-                    }
-
-                    .headerClass {
-                        left: 0;
-                    }
-                }
-
-                /* Stil pentru elementele cu poziții pare */
-                .customClass:nth-child(even) {
-
-                    .headerClass {
-                        right: 0;
-                    }
-
-                    .bodyClass {
-                        position: absolute;
-                        left: 0;
-                    }
-                }
-            }
+      @media (min-width: 1024px) {
+        .customClass {
+          width: 900px !important;
         }
+
+        .customClass:nth-child(odd) {
+          .bodyClass {
+            position: absolute;
+            right: 0;
+          }
+
+          .headerClass {
+            left: 0;
+          }
+        }
+
+        /* Stil pentru elementele cu poziții pare */
+        .customClass:nth-child(even) {
+          .headerClass {
+            right: 0;
+          }
+
+          .bodyClass {
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
     }
+  }
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+.conducereComp {
 }

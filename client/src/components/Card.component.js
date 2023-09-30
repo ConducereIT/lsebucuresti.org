@@ -9,8 +9,6 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-import AmprentaSVG from "../assets/img/LogoLiga/icon_logoLSEblue.webp";
-
 const CardView = ({
   styleCard,
   CardHeaderStyle,
@@ -26,6 +24,7 @@ const CardView = ({
   FooterText,
   FooterStyle,
   FooterButtonOnClickEvent,
+  AmprentaSVG,
 }) => {
   return (
     <Card className={styleCard}>

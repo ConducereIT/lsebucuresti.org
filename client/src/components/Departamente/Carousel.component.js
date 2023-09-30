@@ -3,6 +3,10 @@ import { Carousel } from "react-responsive-carousel";
 import Image from "../../assets/img/Evenimente/alteEvenimente_conectica.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import imagineCaritabil from "../../assets/img/departamente/caritabil.webp";
+import ImagineChitare from "../../assets/img/departamente/Cultural/noaptea_chitarelor.webp";
+import ImagineC from "../../assets/img/departamente/Cultural/ccg.webp";
+
 const Slide = ({ text, image, orientation }) => {
   const isMobile = orientation === "mobile";
   return (
@@ -68,33 +72,47 @@ const PcDevice = () => {
         {/* Slide 1 */}
         <div className="flex items-center h-full">
           <div className="w-1/2 p-4">
-            <h2 className="text-2xl font-bold">Text pe slide 1</h2>
-            <p>Descrierea textului pe slide 1.</p>
+            <h2 className="text-3xl mb-10 font-bold">Spectacolul Caritabil</h2>
+            <p>
+              Dans, muzică, teatru, stand-up, licitație cu obiecte handmade,
+              toate se reunesc într-un eveniment pentru a ajuta de Crăciun pe
+              cineva mai puțin norocos!
+            </p>
           </div>
           <div className="w-1/2">
-            <img src={Image} alt="Slide 1" className="rounded-xl" />
+            <img src={imagineCaritabil} alt="Slide 1" className="rounded-xl" />
           </div>
         </div>
 
         {/* Slide 2 */}
         <div className="flex items-center h-full">
           <div className="w-1/2">
-            <img src={Image} alt="Slide 2" className="rounded-xl" />
+            <img src={ImagineChitare} alt="Slide 2" className="rounded-xl" />
           </div>
           <div className="w-1/2 p-4">
-            <h2 className="text-2xl font-bold">Text pe slide 2</h2>
-            <p>Descrierea textului pe slide 2.</p>
+            <h2 className="text-3xl mb-10 font-bold">Noaptea Chitarelor</h2>
+            <p>
+              Dacă ai o chitară, cânți solo sau vrei doar să te simți bine,
+              Noaptea Chitarelor e sigur locul perfect pentru distracția
+              specifică studenției!
+            </p>
           </div>
         </div>
 
         {/* Slide 3 */}
         <div className="flex items-center h-full">
           <div className="w-1/2 p-4">
-            <h2 className="text-2xl font-bold">Text pe slide 3</h2>
-            <p>Descrierea textului pe slide 3.</p>
+            <h2 className="text-3xl mb-10 font-bold">
+              Concursul de Cultură Generală
+            </h2>
+            <p>
+              Împreună cu dep. Învățământ organizăm acest eveniment unde îți
+              poți testa cunoștințele din diverse domenii, dar promitem și
+              distracție la cote maxime!
+            </p>
           </div>
           <div className="w-1/2">
-            <img src={Image} alt="Slide 3" className="rounded-xl" z />
+            <img src={ImagineC} alt="Slide 3" className="rounded-xl" z />
           </div>
         </div>
       </Carousel>
