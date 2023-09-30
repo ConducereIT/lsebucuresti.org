@@ -1,6 +1,6 @@
 export const styledObjectConducere = {
   styleComponent:
-    "overflow-auto w-full mt-10 flex flex-wrap justify-center bg-color-ev p-2 sm:p-10 mt-5 sm:mt-40 md:mb-[-1px] sm:mb-40 conducereComp rounded-none ",
+    "overflow-auto w-full mt-10 flex flex-wrap justify-center  p-2 sm:p-10 mt-5 sm:mt-40 md:mb-[-1px] sm:mb-40 conducereComp rounded-none ",
   style:
     "mt-4 mb-4 md:ml-10 md:mr-10 max-w-sm overflow-hidden h-[70%] z-0  bg-gray-100 hover:shadow-xl hover:shadow-black/40 ",
   CardHeaderStyle:
