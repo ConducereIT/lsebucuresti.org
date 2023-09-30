@@ -13,6 +13,8 @@ import {
   secondTitleFacultate,
   secondDescriptionFacultate,
 } from "../assets/config/configFacultate.js";
+import Membrii from "../components/Membrii.component";
+import { membersFaculty } from "../assets/config/configFacultate";
 
 const Facultate = () => {
   useEffect(() => {
@@ -30,6 +32,15 @@ const Facultate = () => {
         secondDescription={secondDescriptionFacultate}
         secondPicture={secondPicture}
       />
+      <div className="flex mt-20 md:mx-20 ml-2">
+        <h1 className=" md:text-4xl text-3xl font-bold pb-5 text-center tracking-wider ml-5">
+          Conducere
+          <hr className=" border-4 border-blue-600 opacity-90 w-2/4 p-1 text-center mt-3" />
+        </h1>
+      </div>
+      <div className=" bg-slate-50 md:mx-20 rounded-lg">
+        <Membrii members={membersFaculty} grid={7} />
+      </div>
       <Footer />
     </>
   );

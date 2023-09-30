@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import LsePhoto from "../assets/img/Evenimente/alteEvenimente_PrezentareaSpecializarilor.jpg";
+import LsePhoto from "../assets/img/cover/cinesuntem.webp";
+import LsePhotoSecond from "../assets/img/cover/viziune.webp";
+import LsePhotoThird from "../assets/img/cover/structura.webp";
 import { motion, useInView, useAnimation } from "framer-motion";
 import AboutFaq from "./AboutFaq.component";
+
 export default function About() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -73,7 +76,7 @@ export default function About() {
                   <div className=" pb-10">
                     <img
                       className=" rounded-lg "
-                      src={LsePhoto}
+                      src={LsePhotoSecond}
                       alt="ViziunePhoto"
                     />
                   </div>
@@ -110,7 +113,7 @@ export default function About() {
                   <div>
                     <img
                       className=" rounded-lg "
-                      src={LsePhoto}
+                      src={LsePhotoThird}
                       alt="FaqPhoto"
                     />
                   </div>

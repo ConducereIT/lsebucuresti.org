@@ -8,7 +8,7 @@ import { membersAn } from "../assets/config/configAn";
 
 const Echipa = () => {
   useEffect(() => {
-    document.title = "Membrii";
+    document.title = "Membri";
   }, []);
   return (
     <>
