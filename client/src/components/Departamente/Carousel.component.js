@@ -1,34 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
-import Image from "../../assets/img/Evenimente/alteEvenimente_conectica.webp";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-import imagineCaritabil from "../../assets/img/departamente/caritabil.webp";
-import ImagineChitare from "../../assets/img/departamente/Cultural/noaptea_chitarelor.webp";
-import ImagineC from "../../assets/img/departamente/Cultural/ccg.webp";
-
-const Slide = ({ text, image, orientation }) => {
+const Slide = ({ text, image, description, orientation }) => {
   const isMobile = orientation === "mobile";
   return (
     <div className={isMobile ? " h-96 " : "hidden sm:flex items-center"}>
       {isMobile ? (
         <>
           <div>
-            <img src={image} alt="Slide" />
+            <img src={image} alt={text} />
           </div>
           <div className="p-4">
             <h2 className="text-2xl font-bold">{text}</h2>
-            <p>Descrierea textului pentru acest slide.</p>
+            <p>{description}</p>
           </div>
         </>
       ) : (
         <>
           <div className="w-1/2 p-4">
             <h2 className="text-2xl font-bold">{text}</h2>
-            <p>Descrierea textului pentru acest slide.</p>
+            <p>{description}</p>
           </div>
           <div className="w-1/2">
-            <img src={image} alt="Slide" />
+            <img src={image} alt={text} />
           </div>
         </>
       )}
@@ -36,7 +30,17 @@ const Slide = ({ text, image, orientation }) => {
   );
 };
 
-const MobileDevice = () => {
+const MobileDevice = ({
+  firstTitle,
+  firstDescription,
+  firstPicture,
+  secondTitle,
+  secondDescription,
+  secondPicture,
+  thirdTitle,
+  thirdDescription,
+  thirdPicture,
+}) => {
   return (
     <div className="h-[100%]  content-center  ">
       <Carousel
@@ -48,15 +52,40 @@ const MobileDevice = () => {
         autoPlay={true}
         className="w-full h-[100%] content-center carousel-wrapper "
       >
-        <Slide text="Text pe slide 1" image={Image} orientation="mobile" />
-        <Slide text="Text pe slide 2" image={Image} orientation="mobile" />
-        <Slide text="Text pe slide 3" image={Image} orientation="mobile" />
+        <Slide
+          text={firstTitle}
+          description={firstDescription}
+          image={firstPicture}
+          orientation="mobile"
+        />
+        <Slide
+          text={secondTitle}
+          description={secondDescription}
+          image={secondPicture}
+          orientation="mobile"
+        />
+        <Slide
+          text={thirdTitle}
+          description={thirdDescription}
+          image={thirdPicture}
+          orientation="mobile"
+        />
       </Carousel>
     </div>
   );
 };
 
-const PcDevice = () => {
+const PcDevice = ({
+  firstTitle,
+  firstDescription,
+  firstPicture,
+  secondTitle,
+  secondDescription,
+  secondPicture,
+  thirdTitle,
+  thirdDescription,
+  thirdPicture,
+}) => {
   return (
     <div>
       <Carousel
@@ -72,47 +101,33 @@ const PcDevice = () => {
         {/* Slide 1 */}
         <div className="flex items-center h-full">
           <div className="w-1/2 p-4">
-            <h2 className="text-3xl mb-10 font-bold">Spectacolul Caritabil</h2>
-            <p>
-              Dans, muzică, teatru, stand-up, licitație cu obiecte handmade,
-              toate se reunesc într-un eveniment pentru a ajuta de Crăciun pe
-              cineva mai puțin norocos!
-            </p>
+            <h2 className="text-3xl mb-10 font-bold">{firstTitle}</h2>
+            <p>{firstDescription}</p>
           </div>
           <div className="w-1/2">
-            <img src={imagineCaritabil} alt="Slide 1" className="rounded-xl" />
+            <img src={firstPicture} alt={firstTitle} className="rounded-xl" />
           </div>
         </div>
 
         {/* Slide 2 */}
         <div className="flex items-center h-full">
           <div className="w-1/2">
-            <img src={ImagineChitare} alt="Slide 2" className="rounded-xl" />
+            <img src={secondPicture} alt={secondTitle} className="rounded-xl" />
           </div>
           <div className="w-1/2 p-4">
-            <h2 className="text-3xl mb-10 font-bold">Noaptea Chitarelor</h2>
-            <p>
-              Dacă ai o chitară, cânți solo sau vrei doar să te simți bine,
-              Noaptea Chitarelor e sigur locul perfect pentru distracția
-              specifică studenției!
-            </p>
+            <h2 className="text-3xl mb-10 font-bold">{secondTitle}</h2>
+            <p>{secondDescription}</p>
           </div>
         </div>
 
         {/* Slide 3 */}
         <div className="flex items-center h-full">
           <div className="w-1/2 p-4">
-            <h2 className="text-3xl mb-10 font-bold">
-              Concursul de Cultură Generală
-            </h2>
-            <p>
-              Împreună cu dep. Învățământ organizăm acest eveniment unde îți
-              poți testa cunoștințele din diverse domenii, dar promitem și
-              distracție la cote maxime!
-            </p>
+            <h2 className="text-3xl mb-10 font-bold">{thirdTitle}</h2>
+            <p>{thirdDescription}</p>
           </div>
           <div className="w-1/2">
-            <img src={ImagineC} alt="Slide 3" className="rounded-xl" z />
+            <img src={thirdPicture} alt={thirdTitle} className="rounded-xl" z />
           </div>
         </div>
       </Carousel>
@@ -120,7 +135,17 @@ const PcDevice = () => {
   );
 };
 
-const CarouselDepartament = () => {
+const CarouselDepartament = ({
+  firstTitle,
+  firstDescription,
+  firstPicture,
+  secondTitle,
+  secondDescription,
+  secondPicture,
+  thirdTitle,
+  thirdDescription,
+  thirdPicture,
+}) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -137,7 +162,31 @@ const CarouselDepartament = () => {
     };
   }, []);
 
-  return isMobile ? <MobileDevice /> : <PcDevice />;
+  return isMobile ? (
+    <MobileDevice
+      firstTitle={firstTitle}
+      firstDescription={firstDescription}
+      firstPicture={firstPicture}
+      secondTitle={secondTitle}
+      secondDescription={secondDescription}
+      secondPicture={secondPicture}
+      thirdTitle={thirdTitle}
+      thirdDescription={thirdDescription}
+      thirdPicture={thirdPicture}
+    />
+  ) : (
+    <PcDevice
+      firstTitle={firstTitle}
+      firstDescription={firstDescription}
+      firstPicture={firstPicture}
+      secondTitle={secondTitle}
+      secondDescription={secondDescription}
+      secondPicture={secondPicture}
+      thirdTitle={thirdTitle}
+      thirdDescription={thirdDescription}
+      thirdPicture={thirdPicture}
+    />
+  );
 };
 
 export default CarouselDepartament;

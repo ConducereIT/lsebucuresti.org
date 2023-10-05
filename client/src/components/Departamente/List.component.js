@@ -6,11 +6,8 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import DepartamentItem from "./Item.component";
 import Banner from "../Banner.component";
 
-import video from "../../assets/video/apv.mp4";
-
 export default function DepartamenteList({ itemArray }) {
   const [selectedTab, setSelectedTab] = useState(itemArray[0]);
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -31,6 +28,7 @@ export default function DepartamenteList({ itemArray }) {
     ? " text-black bg-blue-600 w-fit rounded-lg "
     : "mt-7 text-black bg-blue-600 w-fit rounded-lg position-absolute z-10";
 
+  console.log(selectedTab);
   return (
     <>
       <div className="md:pt-0  pb-32 pt-20 md:mx-52 mx-2">
@@ -66,8 +64,8 @@ export default function DepartamenteList({ itemArray }) {
                 <Banner
                   firstTitle={"Departamentul"}
                   secondTitle={"Cultural"}
-                  video={video}
-                  LseBanner={video}
+                  video={selectedTab.video}
+                  LseBanner={selectedTab.banner}
                 />
                 <div className="   h-auto">
                   <div className=" h-auto">
