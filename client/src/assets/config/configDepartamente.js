@@ -14,10 +14,10 @@ export const styledObjectConducere = {
   isActive: false,
 };
 
-import SimulareIMG from "../img/departamente/Cultural/Ioana_Cioroiu.webp";
-import FastFowardImg from "../img/departamente/Cultural/Ioana_Cioroiu.webp";
-import PrezentariSpecializariImg from "../img/departamente/Cultural/Ioana_Cioroiu.webp";
-import DiscoverYourFutureImg from "../img/departamente/Cultural/Ioana_Cioroiu.webp";
+import SimulareIMG from "../img/departamente/cultural/Ioana_Cioroiu.webp";
+import FastFowardImg from "../img/departamente/cultural/Ioana_Cioroiu.webp";
+import PrezentariSpecializariImg from "../img/departamente/cultural/Ioana_Cioroiu.webp";
+import DiscoverYourFutureImg from "../img/departamente/cultural/Ioana_Cioroiu.webp";
 export const mappingObjectConducere = [
   {
     ImgSrc: SimulareIMG,

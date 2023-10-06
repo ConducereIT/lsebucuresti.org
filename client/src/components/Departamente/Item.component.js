@@ -16,7 +16,7 @@ const DepartamentItem = ({ selectedTab }) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="CustomDepartamentItem ">
+    <div className="CustomDepartamentItem">
       <div className="DepartamentItem md:w-auto flex justify-center md:h-10 md:mt-[-7rem] ">
         <motion.button
           className="  text-base md:ml-20  md:text-2xl md:font-semibold md:relative md:inline-block  md:w-32 md:h-2/3 text-black"
@@ -51,7 +51,12 @@ const DepartamentItem = ({ selectedTab }) => {
               transition={{ duration: 0.5 }}
               className=" flex items-center justify-self-center justify-center py-20 mb-10"
             >
-              <Descriere />
+              <Descriere
+                descriere={selectedTab.descriere}
+                locatie={selectedTab.locatie}
+                ora={selectedTab.ora}
+                imgDescriere={selectedTab.imgDescriere}
+              />
             </motion.div>
           )}
           {index === 1 && (
@@ -63,7 +68,17 @@ const DepartamentItem = ({ selectedTab }) => {
               transition={{ duration: 0.5 }}
               className="h-[100%] "
             >
-              <CarouselDepartament />
+              <CarouselDepartament
+                firstTitle={selectedTab.firstTitle}
+                firstDescription={selectedTab.firstDescription}
+                firstPicture={selectedTab.firstPicture}
+                secondTitle={selectedTab.secondTitle}
+                secondDescription={selectedTab.secondDescription}
+                secondPicture={selectedTab.secondPicture}
+                thirdTitle={selectedTab.thirdTitle}
+                thirdDescription={selectedTab.thirdDescription}
+                thirdPicture={selectedTab.thirdPicture}
+              />
             </motion.div>
           )}
           {index === 2 && (
