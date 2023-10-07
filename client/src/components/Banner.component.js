@@ -47,7 +47,7 @@ export default function Banner({
         <Background className="relative w-screen h-screen filter">
           <video
             src={video}
-            className="object-cover h-full w-full hidden sm:block"
+            className="object-none h-full w-full hidden sm:block"
             autoPlay={true}
             muted={true}
             loop={true}
@@ -86,7 +86,9 @@ export default function Banner({
                 >
                   ”{text[currentIndex]}”
                 </motion.p>
-              ) : null}
+              ) : (
+                <div className="mt-32 sm:text-md/relaxed text-white"> </div>
+              )}
             </motion.div>
           </div>
         </div>
