@@ -1,4 +1,4 @@
-import videoCultural from "../video/videoCultural.mp4";
+import videoCultural from "../img/departamente/cultural/videoCultural.mp4";
 import bannerCultural from "../img/departamente/cultural/poza_cultural.webp";
 import caritabil from "../img/departamente/cultural/caritabil.webp";
 import noaptea_chitarelor from "../img/departamente/cultural/noaptea_chitarelor.webp";
@@ -7,6 +7,19 @@ import bannerInvatamant from "../img/departamente/Invatamant/banner_invatamant.w
 import simulare from "../img/departamente/Invatamant/simulare.webp";
 import arena_electronistilor from "../img/departamente/Invatamant/arena_electronistilor.webp";
 import treasure_hunt from "../img/departamente/Invatamant/treasure_hunt.webp";
+
+import videoSportiv from "../img/departamente/sportiv/SPORTIV 2022.v3.mov";
+import bannerSportiv from "../img/departamente/sportiv/banner_sportiv.webp";
+import logoSportiv from "../img/departamente/sportiv/Logo_Sportiv.webp";
+import descriereSportivPc from "../img/departamente/sportiv/poza_toti_membrii_sportiv_pc.webp";
+import descriereSportivTlf from "../img/departamente/sportiv/poza_toti_membrii_sportiv_tlf.webp";
+import evenimentSportivPC_1 from "../img/departamente/sportiv/3ev_apv_pc.webp";
+import evenimentSportivTlf_1 from "../img/departamente/sportiv/3ev_apv_tlf.webp";
+import evenimentSportivPC_2 from "../img/departamente/sportiv/3ev_streetball_pc.webp";
+import evenimentSportivTlf_2 from "../img/departamente/sportiv/3ev_streetball_tlf.webp";
+import evenimentSportivPC_3 from "../img/departamente/sportiv/3ev_letsdance_pc.webp";
+import evenimentSportivTlf_3 from "../img/departamente/sportiv/3ev_letsdance_tlf.webp";
+
 export const DepartamenteProps = [
   {
     label: "Cultural",
@@ -53,5 +66,33 @@ export const DepartamenteProps = [
     thirdDescription:
       "Orice aventură este caracterizată prin elementul de noutate, astfel că fiecare ediție Treasure Hunt revine cu numeroase schimbări în structura concursului, noile locații propunându-și să scoată la iveală cele mai bune idei și strategii de joc.",
     thirdPicture: treasure_hunt,
+  },
+  {
+    label: "Sportiv",
+    logo: logoSportiv,
+    title: "Departamentul Sportiv",
+    video: videoSportiv,
+    banner: bannerSportiv,
+    descriere:
+      "Departamentul Sportiv încurajează studenții să participe la activități fizice recreative. Cu un angajament ferm pentru promovarea mișcării, departamentul nu doar că ne amintește de importanța activității fizice, ci și creează o comunitate vibrantă și sănătoasă.",
+    locatie: "A101",
+    ora: "Luni, ora 20:30",
+    imgDescriere: descriereSportivPc,
+    imgDescriereTlf: descriereSportivTlf,
+    firstTitle: "Aleargă Pentru Viață",
+    firstDescription:
+      "Având o tradiție de 13 ani, Aleargă Pentru Viață reprezintă un cros caritabil în care comunitatea noastră se adună pentru a face o diferență reală în viața celor aflați în situații medicale dificile. Cu pași hotărâți și inimi deschise, alergăm pentru a sprijini și a aduce speranță celor care au nevoie de ajutor.Prin intermediul acestui eveniment reușim atât să îi ajutăm pe cei aflați în dificultate, cât și să promovăm mișcarea și un stil de viață sănătos.",
+    firstPicture: evenimentSportivPC_1,
+    firstPictureTlf: evenimentSportivTlf_1,
+    secondTitle: "Cupa Electronicii la Streetball",
+    secondDescription:
+      "Cupa Electronicii la Streetball reprezintă unul dintre cele mai populare evenimente sportive organizate la nivel de facultate. An de an, atragem zeci de studenți pasionați de sport și competiție într-un loc plin de energie și entuziasm. Este o oportunitate excelentă pentru studenți să își pună la încercare abilitățile într-o atmosferă prietenoasă și competitivă.",
+    secondPicture: evenimentSportivPC_2,
+    secondPictureTlf: evenimentSportivTlf_2,
+    thirdTitle: "Let's Dance",
+    thirdDescription:
+      "Let's dance este un workshop care, pe parcursul a 3 zile, abordează 3 stiluri de dans diferite. Alături decoregrafi care să ne ghideze pașii, workshop-ul își propune să creeze o atmosferă prielnică astfel încât toată lumea să se distreze și să învețe să danseze.",
+    thirdPicture: evenimentSportivPC_3,
+    thirdPictureTlf: evenimentSportivTlf_3,
   },
 ];
