@@ -38,7 +38,7 @@ export default function ContactComponent() {
       formDetails.lastName,
       formDetails.email,
       formDetails.phone,
-      formDetails.message,
+      formDetails.message
     );
     if (status.status) {
       showNotification(status.message);
@@ -48,7 +48,7 @@ export default function ContactComponent() {
   };
 
   return (
-    <section className="contact" id="contact">
+    <section className="contact mb-20" id="contact">
       {notification && <div className="notification">{notification}</div>}
       <Container>
         <Row className="align-items-center">

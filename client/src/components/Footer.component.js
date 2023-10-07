@@ -1,14 +1,14 @@
 import React from "react";
 import { BsInstagram, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
-import Logo from "../assets/img/LogoWhite.png";
+import Logo from "../assets/img/LogoWhite.webp";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-blue-600 mt-16 pt-3 -z-10">
+      <footer className="bg-blue-600  pt-3 ">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
           <div className="md:flex md:items-center md:justify-between">
             <div className="flex items-center mb-4 sm:mb-0 m-2">
-              <img src={Logo} className="h-9 mr-3" alt="LSE Logo" />
+              <img src={Logo} className="h-full w-full mr-3 " alt="LSE Logo" />
               <span className="self-center md:text-2xl text-xl font-semibold whitespace-nowrap text-white">
                 Liga Studenților Electroniști
               </span>
@@ -18,6 +18,7 @@ export default function Footer() {
                 href="https://www.facebook.com/lseorgro"
                 target="_blank"
                 className=" hover:opacity-80 duration-300 hover:scale-110"
+                aria-label="facebook"
               >
                 <BsFacebook size={20} color="white" />
               </a>
@@ -25,6 +26,7 @@ export default function Footer() {
                 href="https://www.instagram.com/ligastudentilorelectronistilse"
                 target="_blank"
                 className=" hover:opacity-80 duration-300 hover:scale-110"
+                aria-label="instagram"
               >
                 <BsInstagram size={20} color="white" />
               </a>
@@ -32,6 +34,7 @@ export default function Footer() {
                 href="https://www.youtube.com/user/lsebucuresti"
                 target="_blank"
                 className=" hover:opacity-80 duration-300 hover:scale-110"
+                aria-label="youtube"
               >
                 <BsYoutube size={20} color="white" />
               </a>
@@ -39,6 +42,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/ligastudentilorelectronisti"
                 target="_blank"
                 className=" hover:opacity-80 duration-300 hover:scale-110 rounded-lg"
+                aria-label="LinkedIn"
               >
                 <BsLinkedin size={20} color="white" />
               </a>

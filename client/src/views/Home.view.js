@@ -9,8 +9,12 @@ import Carousel from "../components/Carousel.component";
 import Sponsor from "../components/Sponsor.component";
 //Config
 import { GallerySlides } from "../assets/config/configCarouselGallery";
+import videoBanner from "../assets/video/videoBanner.mp4";
+import LseBanner from "../assets/img/LseBanner.webp";
+import { slides } from "../assets/config/configAlbum";
 
 import About from "../components/About.component";
+import Album from "../components/Album.component";
 
 export default function Home() {
   useEffect(() => {
@@ -19,11 +23,17 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner
+        firstTitle={"Liga Studenților"}
+        secondTitle={"Electroniști"}
+        video={videoBanner}
+        LseBanner={LseBanner}
+        maiputernici={true}
+      />
       <About />
       <Stats />
-      <Carousel slides={GallerySlides} />
-      <Sponsor />
+      <Album slides={slides} />
+      {/*<Sponsor />*/}
       <Footer />
     </>
   );

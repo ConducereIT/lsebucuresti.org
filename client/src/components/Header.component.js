@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import Logo from "../assets/img/LogoWhite.png";
+import Logo from "../assets/img/LogoWhite.webp";
 
 export default function Header() {
   return (
@@ -10,8 +10,8 @@ export default function Header() {
     >
       <Container>
         <Navbar.Brand href="/">
-          <div className="flex">
-            <img src={Logo} className="h-9 mr-3" alt="LSE Logo" />
+          <div className="flex h-full w-full ">
+            <img src={Logo} className="h-full w-full mr-3" alt="LSE Logo" />
             <span className="self-center md:text-2xl text-base font-semibold whitespace-nowrap text-white">
               Liga Studenților Electroniști
             </span>
@@ -32,7 +32,7 @@ export default function Header() {
                 Departamente
               </span>
             </Nav.Link>
-            <Nav.Link href="/membrii">
+            <Nav.Link href="/membri">
               <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">
                 Membri
               </span>
@@ -47,11 +47,11 @@ export default function Header() {
                 Facultate
               </span>
             </Nav.Link>
-            <Nav.Link href="/faq">
-              <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">
-                FAQ
-              </span>
-            </Nav.Link>
+            {/*<Nav.Link href="/faq">*/}
+            {/*  <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">*/}
+            {/*    FAQ*/}
+            {/*  </span>*/}
+            {/*</Nav.Link>*/}
             <Nav.Link href="/contact">
               <span className="text-xl text-white font-semibold hover:opacity-80 duration-300">
                 Contact

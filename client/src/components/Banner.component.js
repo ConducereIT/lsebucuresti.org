@@ -1,14 +1,16 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Parallax, Background } from "react-parallax";
 
-//Assets
-import videoBanner from "../assets/video/videoBanner.mp4";
-import LseBanner from "../assets/img/LseBanner.png";
-
 //Packages
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const Banner = () => {
+export default function Banner({
+  video,
+  LseBanner,
+  firstTitle,
+  secondTitle,
+  maiputernici,
+}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -44,8 +46,8 @@ const Banner = () => {
       >
         <Background className="relative w-screen h-screen filter">
           <video
-            src={videoBanner}
-            className="object-cover h-full w-full hidden sm:block"
+            src={video}
+            className="object-none h-full w-full hidden sm:block"
             autoPlay={true}
             muted={true}
             loop={true}
@@ -68,30 +70,29 @@ const Banner = () => {
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.25 }}
             >
-              <h2 className="text-3xl font-extrabold sm:text-5xl lg:p-4 text-white">
-                Liga Studenților
-              </h2>
-              <h2 className="text-3xl font-extrabold text-blue-600 sm:text-5xl">
-                Electroniști
-              </h2>
-              <motion.p
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="mt-4 sm:text-md/relaxed text-white"
-                key={text[currentIndex]}
-              >
-                ”{text[currentIndex]}”
-              </motion.p>
-              <h1 className="text-3xl font-extrabold text-yellow-600 sm:text-5xl">
-                Work in Progress...
+              <h1 className="text-3xl font-extrabold sm:text-5xl lg:p-4 text-white">
+                {firstTitle}
               </h1>
+              <h2 className="text-3xl font-extrabold text-blue-600 sm:text-5xl">
+                {secondTitle}
+              </h2>
+              {maiputernici ? (
+                <motion.p
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="mt-4 sm:text-md/relaxed text-white"
+                  key={text[currentIndex]}
+                >
+                  ”{text[currentIndex]}”
+                </motion.p>
+              ) : (
+                <div className="mt-32 sm:text-md/relaxed text-white"> </div>
+              )}
             </motion.div>
           </div>
         </div>
       </Parallax>
     </>
   );
-};
-
-export default Banner;
+}
