@@ -66,6 +66,7 @@ export default function DepartamenteList({ itemArray }) {
                   secondTitle={selectedTab.label}
                   video={selectedTab.video}
                   LseBanner={selectedTab.banner}
+                  maiputernici={selectedTab.maiputernici}
                 />
                 <div className="   h-auto w-auto">
                   <div className=" h-auto w-auto">
