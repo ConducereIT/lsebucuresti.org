@@ -30,8 +30,8 @@ const DepartamentItem = ({ selectedTab }) => {
   }, []);
 
   const styleButton = isMobile
-    ? "text-base font-bold mt-5 pl-4 pr-4 text-black shadow-md shadow-black shadow-bottom bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out h-10"
-    : "text-bold md:ml-20 shadow-md shadow-black md:text-2xl md:font-semibold shadow-bottom md:relative md:inline-block  md:w-44 md:h-3/3 text-center text-black text-base md:ml-4 md:text-2xl md:font-semibold md:relative md:inline-block md:w-32 md:h-10 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out";
+    ? "text-base font-bold mt-5 pl-4 pr-4 text-black  shadow-bottom bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out h-10"
+    : "text-bold md:ml-20  md:text-2xl md:font-semibold shadow-bottom md:relative md:inline-block  md:w-44 md:h-3/3 text-center text-black text-base md:ml-4 md:text-2xl md:font-semibold md:relative md:inline-block md:w-32 md:h-10 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out";
 
   return (
     <div className="CustomDepartamentItem h-auto w-auto ">
