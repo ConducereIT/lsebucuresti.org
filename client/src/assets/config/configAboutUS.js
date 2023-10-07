@@ -26,6 +26,7 @@ export const DepartamenteProps = [
     title: "Departamentul Cultural",
     video: videoCultural,
     banner: "",
+    maiputernici: true,
     descriere:
       "Departamentul Cultural reprezintă latura artistică a Ligii Studenților Electroniști. Voluntari talentați sau mai puțin talentați, cu toții își unesc forțele spre a organiza evenimente ce permit studenților și nu numai să dea frâu liber imaginației și spiritului creativ.",
     locatie: "A05",
@@ -49,6 +50,7 @@ export const DepartamenteProps = [
     title: "Departamentul Învățământ",
     video: videoCultural,
     banner: bannerInvatamant,
+    maiputernici: true,
     descriere:
       "Departamentul Învățământ este un liant între liceeni, studenți și facultate, fiind primul departament cu care viitorii studenți întră în contact prin intermediul Simulării Examenului de Admitere, dar și al Promovării facultății în licee.",
     locatie: "A03",
@@ -73,6 +75,7 @@ export const DepartamenteProps = [
     title: "Departamentul Sportiv",
     video: videoSportiv,
     banner: bannerSportiv,
+    maiputernici: true,
     descriere:
       "Departamentul Sportiv încurajează studenții să participe la activități fizice recreative. Cu un angajament ferm pentru promovarea mișcării, departamentul nu doar că ne amintește de importanța activității fizice, ci și creează o comunitate vibrantă și sănătoasă.",
     locatie: "A101",
