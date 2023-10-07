@@ -2,7 +2,6 @@ import Furtuna from "../img/Portraits/coordonatori/portrait_teodor_furtuna.webp"
 import Radu from "../img/Portraits/coordonatori/portrait_alexandru_radu.webp";
 import Lungu from "../img/Portraits/coordonatori/portrait_radu_lungu.webp";
 import Cioroiu from "../img/Portraits/coordonatori/portrait_ioana_cioroiu.webp";
-import Vladescu from "../img/Portraits/coordonatori/portrait_adrian_vladescu.webp";
 import Naidin from "../img/Portraits/coordonatori/portrait_teodora_naidin.webp";
 import Staicu from "../img/Portraits/coordonatori/portrait_bianca_staicu.webp";
 import Naziru from "../img/Portraits/coordonatori/portrait_miruna_naziru.webp";
@@ -21,11 +20,6 @@ export const membersCoord = [
   {
     image: Lungu,
     nume: "Radu Lungu",
-    title: "Coord. Dep. Media",
-  },
-  {
-    image: Vladescu,
-    nume: "Adrian Vlădescu",
     title: "Coord. Dep. Media",
   },
   {

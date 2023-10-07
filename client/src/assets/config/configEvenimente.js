@@ -48,8 +48,8 @@ export const configEvenimente = [
     video: robo,
     LseBanner: LseBanner,
     firstTitle: "",
-    secondTitle: "Robochallenge",
-    maiputernici: true,
+    secondTitle: "",
+    maiputernici: false,
   },
 ];
 
