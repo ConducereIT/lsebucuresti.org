@@ -4,7 +4,7 @@ import Logo from "../assets/img/LogoWhite.webp";
 
 export default function Header() {
   return (
-    <Navbar expand="lg" className="bg-blue-600 scale-x-75 md:scale-x-100">
+    <Navbar expand="lg" className="bg-blue-600 md:scale-x-100">
       <Container>
         <Navbar.Brand href="/">
           <div className="flex h-full w-full ">

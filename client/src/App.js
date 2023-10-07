@@ -35,7 +35,7 @@ export default function App() {
           <Route path="/facultate" element={<Facultate />} />
           {/*<Route path="/faq" element={<Faq />} />*/}
           <Route path="/contact" element={<Contact />} />
-          <Route path="/departamente" element={<Departamente />} /> */}
+          <Route path="/departamente" element={<Departamente />} />
           <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </Router>
