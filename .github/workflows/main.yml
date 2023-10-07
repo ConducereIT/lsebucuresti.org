@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name : install genezio
+        run: npm install -g genezio
       - name: Genezio Login
         run: genezio login ${{ secrets.GENEZIO_TOKEN }}
       - name: Set CI to false
