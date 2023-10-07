@@ -10,12 +10,14 @@ export const configEvenimente = [
     LseBanner: LseBanner,
     firstTitle: "Aleargă",
     secondTitle: "pentru Viață",
+    maiputernici: true,
   },
   {
     video: videoLan,
     LseBanner: LseBanner,
     firstTitle: "",
-    secondTitle: "Lan Party",
+    secondTitle: "",
+    maiputernici: false,
   },
 ];
 

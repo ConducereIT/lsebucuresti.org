@@ -12,7 +12,6 @@ import { GallerySlides } from "../assets/config/configCarouselGallery";
 import videoBanner from "../assets/video/videoBanner.mp4";
 import LseBanner from "../assets/img/LseBanner.webp";
 
-
 import About from "../components/About.component";
 
 export default function Home() {
@@ -22,7 +21,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Banner firstTitle={"Liga Studenților"} secondTitle={"Electroniști"} video={videoBanner} LseBanner={LseBanner}/>
+      <Banner
+        firstTitle={"Liga Studenților"}
+        secondTitle={"Electroniști"}
+        video={videoBanner}
+        LseBanner={LseBanner}
+        maiputernici={true}
+      />
       <About />
       <Stats />
       <Carousel slides={GallerySlides} />
