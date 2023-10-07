@@ -63,7 +63,7 @@ export default function DepartamenteList({ itemArray }) {
               >
                 <Banner
                   firstTitle={"Departamentul"}
-                  secondTitle={"Cultural"}
+                  secondTitle={selectedTab.label}
                   video={selectedTab.video}
                   LseBanner={selectedTab.banner}
                 />
