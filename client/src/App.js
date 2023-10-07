@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 // View
-import UnderWorking from "./views/UnderWorking.view";
 import Home from "./views/Home.view";
 import Echipa from "./views/Echipa.view";
 import Evenimente from "./views/Evenimente.view";
