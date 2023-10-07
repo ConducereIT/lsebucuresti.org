@@ -21,7 +21,7 @@ export const configEvenimente = [
   },
 ];
 
-export const titleFirstEvenimente = "ROBOCHALLANGE";
+export const titleFirstEvenimente = "ROBOCHALLENGE";
 export const descriptionFirstEvenimente = (
   <p className="text-xl md:text-xl text-left opacity-90 md:pr-8">
     Robochallenge este o competiţie de robotică, care se adresează în special
