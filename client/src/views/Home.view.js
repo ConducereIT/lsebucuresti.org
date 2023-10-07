@@ -28,6 +28,7 @@ export default function Home() {
         secondTitle={"Electroniști"}
         video={videoBanner}
         LseBanner={LseBanner}
+        maiputernici={true}
       />
       <About />
       <Stats />

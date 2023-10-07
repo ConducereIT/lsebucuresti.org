@@ -4,7 +4,13 @@ import { Parallax, Background } from "react-parallax";
 //Packages
 import { motion, useInView, useAnimation } from "framer-motion";
 
-export default function Banner({ video, LseBanner, firstTitle, secondTitle }) {
+export default function Banner({
+  video,
+  LseBanner,
+  firstTitle,
+  secondTitle,
+  maiputernici,
+}) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -70,19 +76,21 @@ export default function Banner({ video, LseBanner, firstTitle, secondTitle }) {
               <h2 className="text-3xl font-extrabold text-blue-600 sm:text-5xl">
                 {secondTitle}
               </h2>
-              <motion.p
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="mt-4 sm:text-md/relaxed text-white"
-                key={text[currentIndex]}
-              >
-                ”{text[currentIndex]}”
-              </motion.p>
+              {maiputernici ? (
+                <motion.p
+                  initial={{ y: 10, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  className="mt-4 sm:text-md/relaxed text-white"
+                  key={text[currentIndex]}
+                >
+                  ”{text[currentIndex]}”
+                </motion.p>
+              ) : null}
             </motion.div>
           </div>
         </div>
       </Parallax>
     </>
   );
-};
+}
