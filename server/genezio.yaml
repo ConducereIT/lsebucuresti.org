@@ -1,4 +1,4 @@
-name: lsebucuresti-backend
+name: lsebucuresti
 region: eu-central-1
 cloudProvider: genezio
 sdk:
