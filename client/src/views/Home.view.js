@@ -11,8 +11,10 @@ import Sponsor from "../components/Sponsor.component";
 import { GallerySlides } from "../assets/config/configCarouselGallery";
 import videoBanner from "../assets/video/videoBanner.mp4";
 import LseBanner from "../assets/img/LseBanner.webp";
+import { slides } from "../assets/config/configAlbum";
 
 import About from "../components/About.component";
+import Album from "../components/Album.component";
 
 export default function Home() {
   useEffect(() => {
@@ -30,7 +32,7 @@ export default function Home() {
       />
       <About />
       <Stats />
-      <Carousel slides={GallerySlides} />
+      <Album slides={slides} />
       {/*<Sponsor />*/}
       <Footer />
     </>
