@@ -25,13 +25,13 @@ export default function DepartamenteList({ itemArray }) {
   }, []);
 
   const styleButton = isMobile
-    ? " text-black bg-blue-600 w-fit rounded-lg "
+    ? " text-black bg-blue-600 w-fit rounded-lg position-absolute z-10 mt-2"
     : "mt-7 text-black bg-blue-600 w-fit rounded-lg position-absolute z-10";
 
   console.log(selectedTab);
   return (
     <>
-      <div className="md:pt-0  pb-32 pt-20 md:mx-52 mx-2">
+      <div className="  md:pb-32  md:mx-52 mx-2">
         <div>
           <div className="flex justify-end mr-5">
             <DropdownButton
@@ -67,8 +67,8 @@ export default function DepartamenteList({ itemArray }) {
                   video={selectedTab.video}
                   LseBanner={selectedTab.banner}
                 />
-                <div className="   h-auto">
-                  <div className=" h-auto">
+                <div className="   h-auto w-auto">
+                  <div className=" h-auto w-auto">
                     <DepartamentItem selectedTab={selectedTab} />
                   </div>
                 </div>

@@ -1,5 +1,28 @@
-import React from "react";
-const Descriere = ({ descriere, locatie, ora, imgDescriere }) => {
+import React, { useState, useEffect } from "react";
+
+const Descriere = ({
+  descriere,
+  locatie,
+  ora,
+  imgDescriere,
+  imgDescriereTlf,
+}) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mobileMediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mobileMediaQuery.matches);
+
+    const handleResize = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mobileMediaQuery.addListener(handleResize);
+    return () => {
+      mobileMediaQuery.removeListener(handleResize);
+    };
+  }, []);
+
   return (
     <div className=" flex items-center justify-center">
       <div className="w-4/5 md:w-80%">
@@ -24,12 +47,20 @@ const Descriere = ({ descriere, locatie, ora, imgDescriere }) => {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2">
-            <img
-              className="rounded-lg mt-6 md:ml-8"
-              src={imgDescriere}
-              alt="Descriere"
-            />
+          <div className="w-full md:w-1/2 ">
+            {isMobile ? (
+              <img
+                className="rounded-lg mt-6 md:ml-8 "
+                src={imgDescriereTlf}
+                alt="Descriere"
+              />
+            ) : (
+              <img
+                className="rounded-lg mt-6 md:ml-8"
+                src={imgDescriere}
+                alt="Descriere"
+              />
+            )}
           </div>
         </div>
       </div>
