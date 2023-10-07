@@ -1,5 +1,9 @@
 import videoApv from "../video/apv.mp4";
 import videoLan from "../video/lanparty.mp4";
+import videoSimulare2022 from "../video/simulare2022.mp4";
+import videoLetsDance from "../video/letsdance.mp4";
+import videoTreasureHunt from "../video/treasurehunt.mp4";
+import robo from "../video/robo.mp4";
 import React from "react";
 
 import LseBanner from "../img/LseBanner.webp";
@@ -18,6 +22,34 @@ export const configEvenimente = [
     firstTitle: "",
     secondTitle: "",
     maiputernici: false,
+  },
+  {
+    video: videoSimulare2022,
+    LseBanner: LseBanner,
+    firstTitle: "Simularea",
+    secondTitle: "Admiterii 2022",
+    maiputernici: true,
+  },
+  {
+    video: videoLetsDance,
+    LseBanner: LseBanner,
+    firstTitle: "",
+    secondTitle: "",
+    maiputernici: false,
+  },
+  {
+    video: videoTreasureHunt,
+    LseBanner: LseBanner,
+    firstTitle: "Treasure",
+    secondTitle: "Hunt",
+    maiputernici: true,
+  },
+  {
+    video: robo,
+    LseBanner: LseBanner,
+    firstTitle: "",
+    secondTitle: "Robochallenge",
+    maiputernici: true,
   },
 ];
 

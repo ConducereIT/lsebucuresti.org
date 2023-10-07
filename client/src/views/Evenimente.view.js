@@ -23,9 +23,15 @@ import {
 } from "../assets/config/configEvenimente";
 import firstPicture from "../assets/img/Evenimente/robo.webp";
 import secondPicture from "../assets/img/Evenimente/apv.webp";
-// shaffle configEvenimente
+// shaffle configEvenimente Durstenfeld
 
-const shuffle = configEvenimente.sort(() => Math.random() - 0.5);
+for (let i = configEvenimente.length - 1; i > 0; i--) {
+  let j = Math.floor(Math.random() * (configEvenimente.length - 1));
+  let temp = configEvenimente[i];
+  configEvenimente[i] = configEvenimente[j];
+  configEvenimente[j] = temp;
+}
+const shuffle = configEvenimente;
 
 const Evenimente = () => {
   useEffect(() => {
@@ -39,6 +45,7 @@ const Evenimente = () => {
         LseBanner={shuffle[0].LseBanner}
         firstTitle={shuffle[0].firstTitle}
         secondTitle={shuffle[0].secondTitle}
+        maiputernici={shuffle[0].maiputernici}
       />
 
       <LeftRight
