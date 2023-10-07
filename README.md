@@ -8,7 +8,6 @@
 
 ## You can check a [demo app here](https://chocolate-extreme-armadillo.dev.app.genez.io/).
 
-
 This is a presentation website of the "Electronic Students League". It uses React for the frontend application and
 Genezio for the backend implementation and development.
 
