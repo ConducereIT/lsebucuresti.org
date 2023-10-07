@@ -23,16 +23,25 @@ import {
 } from "../assets/config/configEvenimente";
 import firstPicture from "../assets/img/Evenimente/robo.webp";
 import secondPicture from "../assets/img/Evenimente/apv.webp";
-// shaffle configEvenimente Durstenfeld
+// shuffle configEvenimente modernFisherYatesShuffle
 
 for (let i = configEvenimente.length - 1; i > 0; i--) {
-  let j = Math.floor(Math.random() * (configEvenimente.length - 1));
-  let temp = configEvenimente[i];
-  configEvenimente[i] = configEvenimente[j];
-  configEvenimente[j] = temp;
+  const j = Math.floor(Math.random() * (i + 1)); // Generare aleatoare mai robustă
+  [configEvenimente[i], configEvenimente[j]] = [
+    configEvenimente[j],
+    configEvenimente[i],
+  ];
 }
 const shuffle = configEvenimente;
 
+//shuffle mappingobjev modernFisherYatesShuffle
+for (let i = mappingObjectEvenimente.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1)); // Generare aleatoare mai robustă
+  [mappingObjectEvenimente[i], mappingObjectEvenimente[j]] = [
+    mappingObjectEvenimente[j],
+    mappingObjectEvenimente[i],
+  ];
+}
 const Evenimente = () => {
   useEffect(() => {
     document.title = "Evenimente";
