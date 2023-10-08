@@ -25,10 +25,9 @@ export default function DepartamenteList({ itemArray }) {
   }, []);
 
   const styleButton = isMobile
-    ? " text-black bg-blue-600 w-fit rounded-lg position-absolute z-10 mt-2"
-    : "mt-7 text-black bg-blue-600 w-fit rounded-lg position-absolute z-10";
+    ? " text-black bg-blue-600 w-fit rounded-lg position-absolute z-10 mt-3 mr-[-1rem]"
+    : "mt-7 mr-4 text-black bg-blue-600 w-fit rounded-lg position-absolute z-10";
 
-  console.log(selectedTab);
   return (
     <>
       <div className="  md:pb-32  md:mx-52 mx-2">
@@ -44,7 +43,7 @@ export default function DepartamenteList({ itemArray }) {
               {itemArray.map((item, index) => (
                 <Dropdown.Item
                   key={index}
-                  className=" cursor-pointer bg"
+                  className="cursor-pointer bg"
                   onClick={() => setSelectedTab(item)}
                 >
                   {`${item.label}`}
