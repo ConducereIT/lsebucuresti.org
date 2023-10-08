@@ -5,6 +5,16 @@ import Iulia from "../img/Portraits/consiliu_executiv/portrait_iulia_orvas.webp"
 import Dinut from "../img/Portraits/consiliu_executiv/portrait_cosmin_dinut.webp";
 export const membersCE = [
   {
+    image: Iulia,
+    nume: "Iulia Orvas",
+    title: "Secretar General",
+  },
+  {
+    image: Dragu,
+    nume: "Andrei Dragu",
+    title: "Vicepreședinte",
+  },
+  {
     image: CalinIorga,
     nume: "Călin Iorga",
     title: "Președinte",
@@ -13,16 +23,6 @@ export const membersCE = [
     image: Teodora,
     nume: "Teodora Mîrzan",
     title: "Vicepreședinte",
-  },
-  {
-    image: Dragu,
-    nume: "Andrei Dragu",
-    title: "Vicepreședinte",
-  },
-  {
-    image: Iulia,
-    nume: "Iulia Orvas",
-    title: "Secretar General",
   },
   {
     image: Dinut,
