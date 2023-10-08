@@ -4,13 +4,6 @@ import CarouselDepartament from "./Carousel.component";
 import Descriere from "./Descriere.component";
 import Conducere from "./Conducere.component";
 
-import {
-  styledObjectConducere,
-  mappingObjectConducere,
-} from "../../assets/config/configDepartamente";
-
-import AmprentaSVG from "../../assets/img/LogoLiga/icon_logoLSEblue.webp";
-
 const DepartamentItem = ({ selectedTab }) => {
   const [index, setIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -101,9 +94,9 @@ const DepartamentItem = ({ selectedTab }) => {
               className="componenta3  h-[100%] w-auto"
             >
               <Conducere
-                styledObject={styledObjectConducere}
-                mappingObject={mappingObjectConducere}
-                AmprentaSVG={AmprentaSVG}
+                styledObject={selectedTab.styledObjectConducere}
+                mappingObject={selectedTab.mappingObjectConducere}
+                AmprentaSVG={selectedTab.logo}
               />
             </motion.div>
           )}
