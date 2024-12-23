@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
-import { ControllerUserData } from "../sdk/controllerUserData.sdk";
+import { ControllerUserData } from "@genezio-sdk/landing-page-lsebucuresti" 
 
 export default function ContactComponent() {
   const [notification, setNotification] = useState(null);

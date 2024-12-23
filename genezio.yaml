@@ -1,0 +1,24 @@
+name: landing-page-lsebucuresti
+region: eu-central-1
+yamlVersion: 2
+frontend:
+    path: client
+    publish: build
+    scripts:
+        deploy:
+            - npm install @genezio-sdk/${{projectName}}@1.0.0-${{stage}}
+            - npm install
+        build:
+            - npm run build
+    sdk:
+        language: ts
+    subdomain: chocolate-extreme-armadillo
+backend:
+    path: server
+    language:
+        name: ts
+    scripts:
+        deploy:
+            - npm install
+        local:
+            - npm install

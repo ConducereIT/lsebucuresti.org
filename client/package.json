@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "7.22.11",
+    "@genezio-sdk/landing-page-lsebucuresti": "^1.0.0-prod",
     "@headlessui/react": "^1.7.17",
     "@material-tailwind/react": "^2.1.1",
     "@testing-library/react": "^14.0.0",
@@ -20,9 +23,7 @@
     "react-script": "^2.0.5",
     "react-scripts": "4.0.3",
     "reactstrap": "^9.1.4",
-    "web-vitals": "^3.4.0",
-    "@babel/plugin-transform-private-property-in-object": "7.22.11",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "web-vitals": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,12 +44,12 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.3",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "7.22.11",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "tailwindcss": "^3.3.3"
   }
 }
