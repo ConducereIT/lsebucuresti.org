@@ -1,7 +1,9 @@
 import * as nodemailer from "nodemailer";
 import * as dotenv from "dotenv";
-
+import { GenezioDeploy } from "@genezio/types";
 dotenv.config();
+
+@GenezioDeploy()
 export class Send_mailer {
   constructor() {}
 

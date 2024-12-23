@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@genezio/types": "^1.0.20",
     "dotenv": "^16.3.1",
     "nodemailer": "^6.9.5"
   },

@@ -1,6 +1,6 @@
 import { Send_mailer } from "./mailer";
 import * as dotenv from "dotenv";
-
+import { GenezioDeploy } from "@genezio/types";
 dotenv.config();
 
 export type SendMessageResponse = {
@@ -8,6 +8,7 @@ export type SendMessageResponse = {
   message: string;
 };
 
+@GenezioDeploy()
 export class ControllerUserData {
   async sendMessage(
     firstName: string,
